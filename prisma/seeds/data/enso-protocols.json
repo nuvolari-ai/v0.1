@@ -1,0 +1,4174 @@
+[
+  {
+    "slug": "sky-migrators",
+    "url": "https://sky.money/",
+    "logosUri": [],
+    "description": "",
+    "name": "Sky (Migrators)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "solv-btc-bbn",
+    "url": "https://app.solv.finance/babylon",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/solvbtc-lsts"
+    ],
+    "description": "",
+    "name": "SolvBTC Babylon",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "solv-btc",
+    "url": "https://app.solv.finance/babylon",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/solvbtc"
+    ],
+    "description": "",
+    "name": "SolvBTC",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "sommelier",
+    "url": "https://sommelier.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/sommelier.png"
+    ],
+    "description": "",
+    "name": "Sommelier",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "stability",
+    "url": "https://stability.farm/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stability"
+    ],
+    "description": "",
+    "name": "Stability",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "stable-jack",
+    "url": "https://app.stablejack.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stable-jack"
+    ],
+    "description": "",
+    "name": "Stable Jack",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "stader-ethx",
+    "url": "https://www.staderlabs.com",
+    "logosUri": [
+      "https://icons.llama.fi/stader.jpg"
+    ],
+    "description": "",
+    "name": "Stader (ETHx)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "stakedao-sd-gauge",
+    "url": "https://stakedao.org/",
+    "logosUri": [
+      "https://icons.llama.fi/stakedao.jpg"
+    ],
+    "description": "",
+    "name": "Stake DAO (Gauge)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "steer",
+    "url": "https://steer.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/steer-protocol.jpg"
+    ],
+    "description": "",
+    "name": "Steer Protocol",
+    "chains": [
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "enso",
+    "url": "https://enso.finance/",
+    "logosUri": [],
+    "description": null,
+    "name": null,
+    "chains": []
+  },
+  {
+    "slug": "summer-fi",
+    "url": "https://summer.fi/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/lazy-summer-protocol"
+    ],
+    "description": "",
+    "name": "Summer.fi",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "symbiotic-restake",
+    "url": "https://symbiotic.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/symbiotic.png"
+    ],
+    "description": "",
+    "name": "Symbiotic",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "shibaswap",
+    "url": "https://shibaswap.com/",
+    "logosUri": [
+      "https://icons.llama.fi/shibaswap.jpg"
+    ],
+    "description": "",
+    "name": "Shibaswap",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "rings-wstkscusd",
+    "url": "https://rings.money/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Rings wSTKSCUSD",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "yield-fi",
+    "url": "https://yield.fi/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldfi"
+    ],
+    "description": "",
+    "name": "Yield.fi",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "symbiontic-restake",
+    "url": "https://symbiotic.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/symbiotic.png"
+    ],
+    "description": "",
+    "name": "Symbiotic",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "bex",
+    "url": "https://bex.xyz",
+    "logosUri": [],
+    "description": "",
+    "name": "BEX",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "iron-bank",
+    "url": "https://ib.xyz/",
+    "logosUri": [],
+    "description": "",
+    "name": "Iron Bank",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "moonwell",
+    "url": "https://moonwell.fi/",
+    "logosUri": [],
+    "description": "",
+    "name": "Moonwell",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "benqi",
+    "url": "https://benqi.fi/",
+    "logosUri": [],
+    "description": "",
+    "name": "BENQI",
+    "chains": [
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "benqi-isolated",
+    "url": "https://benqi.fi/",
+    "logosUri": [],
+    "description": "",
+    "name": "BENQI (isolated)",
+    "chains": [
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "idle",
+    "url": "https://idle.finance",
+    "logosUri": [
+      "https://icons.llama.fi/idle.jpg"
+    ],
+    "description": "",
+    "name": "Idle Finance",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "angle",
+    "url": "https://www.angle.money",
+    "logosUri": [
+      "https://icons.llama.fi/angle.jpg"
+    ],
+    "description": "",
+    "name": "Angle Protocol",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "yieldnest-ybnb",
+    "url": "https://www.yieldnest.finance",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "YieldNest Restake YBNB",
+    "chains": [
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "origin-wsuperoethb",
+    "url": "https://www.originprotocol.com/oeth",
+    "logosUri": [
+      "https://icons.llama.fi/origin-protocol.png"
+    ],
+    "description": "",
+    "name": "Origin Protocol (oETH)",
+    "chains": [
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "frax-ether",
+    "url": "https://defillama.com/protocol/frax-ether",
+    "logosUri": [
+      "https://icons.llama.fi/frax.jpg"
+    ],
+    "description": "",
+    "name": "Frax Ether",
+    "chains": []
+  },
+  {
+    "slug": "concrete",
+    "url": "https://www.lombard.finance/",
+    "logosUri": [],
+    "description": "",
+    "name": "Concrete Vaults",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "rings-sc",
+    "url": "https://rings.money/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Rings_Sc",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "silo-v2-protected",
+    "url": "https://silo.finance",
+    "logosUri": [
+      "https://icons.llama.fi/silo-finance.png"
+    ],
+    "description": "",
+    "name": "Silo V2 (protected)",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "silo-v2",
+    "url": "https://silo.finance",
+    "logosUri": [
+      "https://icons.llama.fi/silo-finance.png"
+    ],
+    "description": "",
+    "name": "Silo V2",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "silo",
+    "url": "https://silo.finance",
+    "logosUri": [
+      "https://icons.llama.fi/silo-finance.png"
+    ],
+    "description": "",
+    "name": "Silo",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "verse",
+    "url": "https://verse.bitcoin.com/",
+    "logosUri": [
+      "https://icons.llama.fi/verse.png"
+    ],
+    "description": "",
+    "name": "Verse",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "camelot-v2",
+    "url": "https://excalibur.exchange/",
+    "logosUri": [
+      "https://icons.llama.fi/camelot-v2.png"
+    ],
+    "description": "",
+    "name": "Camelot v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "morpho-aave-vaults",
+    "url": "https://aavev3.morpho.org",
+    "logosUri": [
+      "https://icons.llama.fi/morpho-aavev3.png"
+    ],
+    "description": "",
+    "name": "Morpho (Aave Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "morpho-compound-vaults",
+    "url": "https://compound.morpho.org",
+    "logosUri": [
+      "https://icons.llama.fi/morpho-compound.jpg"
+    ],
+    "description": "",
+    "name": "Morpho (Compound Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "exactly",
+    "url": "https://exact.ly",
+    "logosUri": [
+      "https://icons.llama.fi/exactly.jpg"
+    ],
+    "description": "",
+    "name": "Exactly",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "spark",
+    "url": "https://spark.fi",
+    "logosUri": [
+      "https://icons.llama.fi/spark.jpg"
+    ],
+    "description": "",
+    "name": "Spark",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "cian-erc4626",
+    "url": "https://vault.cian.app",
+    "logosUri": [
+      "https://icons.llama.fi/cian-vaults.jpg"
+    ],
+    "description": "",
+    "name": "Cian Vaults",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "pancakeswap-amm",
+    "url": "https://pancakeswap.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/pancakeswap-stableswap.jpg"
+    ],
+    "description": "",
+    "name": "PancackeSwap v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "uniswap-v2",
+    "url": "https://uniswap.org/",
+    "logosUri": [
+      "https://icons.llama.fi/uniswap-v2.png"
+    ],
+    "description": "",
+    "name": "Uniswap v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-aave-erc4626",
+    "url": "https://reserve.org",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Aave Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "infrared",
+    "url": "https://infrared.finance/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/infrared-finance"
+    ],
+    "description": "",
+    "name": "Infrared Finance",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "etherfi-liquid",
+    "url": "https://app.ether.fi/liquid",
+    "logosUri": [
+      "https://icons.llama.fi/ether.fi.jpg"
+    ],
+    "description": "",
+    "name": "Etherfi Liquid Vaults",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "etherfi-lrts",
+    "url": "https://ether.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/ether.fi.jpg"
+    ],
+    "description": "",
+    "name": "Etherfi LRTs",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "etherfi",
+    "url": "https://ether.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/ether.fi.jpg"
+    ],
+    "description": "",
+    "name": "ether.fi",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "mozaic-theseus",
+    "url": "https://mozaic.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/mozaic.png"
+    ],
+    "description": "",
+    "name": "Mozaic (Theseus)",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "origami-lov-vaults",
+    "url": "https://origami.finance/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/origami-finance.png"
+    ],
+    "description": "",
+    "name": "Origami Lov Vaults",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "origami-vaults",
+    "url": "https://origami.finance/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/origami-finance.png"
+    ],
+    "description": "",
+    "name": "Origami",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "origin-superoeth",
+    "url": "https://www.originprotocol.com/oeth",
+    "logosUri": [
+      "https://icons.llama.fi/super-oeth.png"
+    ],
+    "description": "Origin protocol super oeth",
+    "name": "Origin super OETH",
+    "chains": [
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "sushiswap",
+    "url": "https://sushi.com/",
+    "logosUri": [
+      "https://icons.llama.fi/sushiswap.png"
+    ],
+    "description": "",
+    "name": "Sushiswap v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "stakedao-sd",
+    "url": "https://stakedao.org/",
+    "logosUri": [
+      "https://icons.llama.fi/stakedao.jpg"
+    ],
+    "description": "",
+    "name": "Stake DAO",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "dinero-beraEth",
+    "url": "https://dinero.xyz",
+    "logosUri": [
+      "https://icons.llama.fi/dinero.png"
+    ],
+    "description": "",
+    "name": "Dinero BeraEth",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "stakestone-berastone",
+    "url": "https://app.stakestone.io/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "Stakestone BeraSTONE",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "stakestone-btc",
+    "url": "https://app.stakestone.io/u/vault/detail/bera",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stakestone"
+    ],
+    "description": "",
+    "name": "Stakestone Liquid BTC",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "stakestone-sbtc",
+    "url": "https://app.stakestone.io/u/btc/stake",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stakestone"
+    ],
+    "description": "",
+    "name": "Stakestone Sbtc",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "stakestone-stone",
+    "url": "https://app.stakestone.io/u/eth/stake",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stakestone"
+    ],
+    "description": "",
+    "name": "Stakestone Stone Ether",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "stargate-farming",
+    "url": "https://www.stargate.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/stargate-v1.png"
+    ],
+    "description": "",
+    "name": "Stargate (Farming)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "stargate",
+    "url": "https://www.stargate.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/stargate-v1.png"
+    ],
+    "description": "",
+    "name": "Stargate",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "swell",
+    "url": "https://swellnetwork.io",
+    "logosUri": [
+      "https://icons.llama.fi/swell.png"
+    ],
+    "description": "",
+    "name": "Swell",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-morpho-erc4626",
+    "url": "https://reserve.org",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Morpho Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "d2-vaults",
+    "url": "https://d2.finance/strategies",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/d2-finance"
+    ],
+    "description": "",
+    "name": "D2 Finance Vaults",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "mountain-wusdm",
+    "url": "https://defi.mountainprotocol.com/",
+    "logosUri": [],
+    "description": "",
+    "name": "Mountain WUSDM ",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "gains-trade-vaults",
+    "url": "https://gains.trade/vaults",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/gains-network"
+    ],
+    "description": "",
+    "name": "Gains Trade Vaults",
+    "chains": [
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "yieldnest-ynbnbx",
+    "url": "https://www.yieldnest.finance",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "YieldNest Restake YNBNBX",
+    "chains": [
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "rings",
+    "url": "https://rings.money/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Rings",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "acorn-wabtc",
+    "url": "https://acornnetwork.io/",
+    "logosUri": [],
+    "description": "",
+    "name": "Acorn waBTC",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "cian-bera",
+    "url": "https://yieldlayer.cian.app/berachain",
+    "logosUri": [
+      "https://icons.llama.fi/cian-vaults.jpg"
+    ],
+    "description": "",
+    "name": "Cian Berachain Vaults",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "tokemak-autoeth",
+    "url": "https://www.tokemak.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/protocols/tokemak.jpg"
+    ],
+    "description": "",
+    "name": "Tokemak AutoETH",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "bedrock-unibtc",
+    "url": "https://defillama.com/protocol/bedrock",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/bedrock"
+    ],
+    "description": "",
+    "name": "Bedrock UniBTC",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "origin-vaults",
+    "url": "https://originprotocol.com/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/origin-protocol"
+    ],
+    "description": "",
+    "name": "Origin Protocol",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "yieldnest-ynbtck",
+    "url": "https://www.yieldnest.finance",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "YieldNest Restake YNBTCK",
+    "chains": [
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "yieldnest-ynethx",
+    "url": "https://www.yieldnest.finance",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "YieldNest Restake YNETHX",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "liftdollar",
+    "url": "https://liftdollar.com/",
+    "logosUri": [
+      "https://liftdollar.com/wp-content/uploads/2024/03/lift-dollar-main-logo.svg"
+    ],
+    "description": "",
+    "name": "liftdollar wUSDL",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "rings-sc-staked-wrapped",
+    "url": "https://rings.money/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Rings Wrapped Staked SC",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "kodiak-v2",
+    "url": "https://kodiak.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/kodiak-v2.png"
+    ],
+    "description": "",
+    "name": "Kodiak v2",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "uniswap-v3",
+    "url": "https://uniswap.org/",
+    "logosUri": [
+      "https://icons.llama.fi/uniswap-v3.png"
+    ],
+    "description": "",
+    "name": "Uniswap v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "pancakeswap-amm-v3",
+    "url": "https://pancakeswap.finance/",
+    "logosUri": [],
+    "description": "",
+    "name": "PancakeSwap v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "unsheth",
+    "url": "https://unsheth.xyz/",
+    "logosUri": [
+      "https://icons.llama.fi/unsheth.png"
+    ],
+    "description": "",
+    "name": "unshETH",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "pangolin",
+    "url": "https://pangolin.exchange/",
+    "logosUri": [
+      "https://icons.llama.fi/pangolin.png"
+    ],
+    "description": "",
+    "name": "Pangolin",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "trader-joe-dex",
+    "url": "https://traderjoexyz.com/",
+    "logosUri": [
+      "https://icons.llama.fi/trader-joe.png"
+    ],
+    "description": "",
+    "name": "Trader Joe v1",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "morpho-aave",
+    "url": "https://www.Morpho.xyz/",
+    "logosUri": [
+      "https://icons.llama.fi/morpho-aavev3.png"
+    ],
+    "description": "",
+    "name": "Morpho (Aave)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "morpho-compound",
+    "url": "https://www.Morpho.xyz/",
+    "logosUri": [
+      "https://icons.llama.fi/morpho-aavev3.png"
+    ],
+    "description": "",
+    "name": "Morpho (Aave)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "mozaic",
+    "url": "https://mozaic.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/mozaic.png"
+    ],
+    "description": "",
+    "name": "Mozaic",
+    "chains": [
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "ethena-sena",
+    "url": "https://ethena.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/ethena.jpg"
+    ],
+    "description": "",
+    "name": "Ethena (sENA)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "adapter-vaults",
+    "url": "https://adapter.fi/",
+    "logosUri": [
+      "https://avatars.githubusercontent.com/u/167014992?s=200&v=4"
+    ],
+    "description": "",
+    "name": "Adapter (Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "beraborrow",
+    "url": "https://www.beraborrow.com/",
+    "logosUri": [],
+    "description": "",
+    "name": "Beraborrow Vaults",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "origami",
+    "url": "https://origami.finance/",
+    "logosUri": [],
+    "description": "",
+    "name": "Origami",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "the-honey-jar",
+    "url": "https://www.0xhoneyjar.xyz/",
+    "logosUri": [],
+    "description": "",
+    "name": "The Honey Jar vaults",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "dahlia",
+    "url": "https://dahlia.xyz/",
+    "logosUri": [],
+    "description": "",
+    "name": "Dahlia vaults",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "origin-woeth",
+    "url": "https://www.originprotocol.com/oeth",
+    "logosUri": [
+      "https://icons.llama.fi/origin-ether.png"
+    ],
+    "description": "",
+    "name": "Wrapped Origin Ether (oETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "origin-wos",
+    "url": "https://app.originprotocol.com/#/os/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/origin-sonic"
+    ],
+    "description": "",
+    "name": "Wrapped Origin Sonic (wOS)",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "inception-lrt",
+    "url": "https://www.inceptionlrt.com",
+    "logosUri": [
+      "https://icons.llama.fi/inceptionlrt-(isolated-restaking).png"
+    ],
+    "description": "",
+    "name": "InceptionLRT",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "kodiak-islands",
+    "url": "https://kodiak.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/kodiakpng"
+    ],
+    "description": "",
+    "name": "Kodiak Islands",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "lido",
+    "url": "https://lido.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/lido.png"
+    ],
+    "description": "",
+    "name": "Lido",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "locus",
+    "url": "https://locus.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/locus-finance.png"
+    ],
+    "description": "",
+    "name": "Locus Finance",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "lorenzo-stbtc",
+    "url": "https://app.lorenzo-protocol.xyz/staking",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/lorenzo-stbtc"
+    ],
+    "description": "",
+    "name": "Lorenzo Mint stBTC",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "mantle-meth",
+    "url": "https://mantle.xyz",
+    "logosUri": [
+      "https://icons.llama.fi/mantle-staked-eth.png"
+    ],
+    "description": "",
+    "name": "Mantle (mETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "maverick-v1",
+    "url": "https://.mav.xyz/",
+    "logosUri": [
+      "https://icons.llama.fi/maverick-v1.jpg"
+    ],
+    "description": "",
+    "name": "Maverick v1",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "moby-dov",
+    "url": "https://moby-dov.com/",
+    "logosUri": [
+      "https://icons.llama.fi/moby-dov.png"
+    ],
+    "description": "",
+    "name": "Moby_Dov",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "moby-trade-wolp",
+    "url": "https://moby.trade/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/moby"
+    ],
+    "description": "",
+    "name": "Moby wOLP (Wrapped Options Liquidity Pools)",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "molten-usdm",
+    "url": "https://molten.fii/",
+    "logosUri": [
+      "https://icons.llama.fi/molten.jpg"
+    ],
+    "description": "",
+    "name": "Molten (USDM)",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "morpho-blue-vaults",
+    "url": "https://morpho.org",
+    "logosUri": [
+      "https://icons.llama.fi/morpho-blue.png"
+    ],
+    "description": "",
+    "name": "Morpho Blue (Vaults)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "dinero-apxeth",
+    "url": "https://dineroismoney.com/",
+    "logosUri": [
+      "https://icons.llama.fi/dinero-(pirex-eth).jpg"
+    ],
+    "description": "",
+    "name": "Dinero (apxETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "mstable-convex",
+    "url": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault#convex-3crv-vaults",
+    "logosUri": [
+      "https://icons.llama.fi/mstable.jpg"
+    ],
+    "description": "USDC 3Pool Convex Meta Vault",
+    "name": "mStable (Convex)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "pendle-markets",
+    "url": "https://pendle.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/pendle.jpg"
+    ],
+    "description": "",
+    "name": "Pendle (Markets)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "primex-buckets",
+    "url": "https://primex.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/primex-finance.jpg"
+    ],
+    "description": "",
+    "name": "Primex Finance (Buckets)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "restake-rtokens",
+    "url": "https://app.restakefinance.com/restake",
+    "logosUri": [
+      "https://icons.llama.fi/restake-finance.png"
+    ],
+    "description": "",
+    "name": "Restake Finance (rTokens)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "rings-sc-staked",
+    "url": "https://rings.money/",
+    "logosUri": [],
+    "description": "",
+    "name": "Rings staked scusd",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "burrbear",
+    "url": "https://burrbear.io/",
+    "logosUri": [],
+    "description": "",
+    "name": "BurrBear",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "reservoir",
+    "url": "https://www.reservoir.xyz/",
+    "logosUri": [],
+    "description": "",
+    "name": "Reservoir",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "bancor-v3",
+    "url": "https://bancor.org/",
+    "logosUri": [
+      "https://icons.llama.fi/bancor.png"
+    ],
+    "description": "",
+    "name": "Bancor v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "bedrock-lrt",
+    "url": "hhttps://www.bedrock.technology/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/bedrock"
+    ],
+    "description": "",
+    "name": "Bedrock_Lrt LRT tokens",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "beefy",
+    "url": "https://beefy.com/",
+    "logosUri": [
+      "https://icons.llama.fi/beefy.png"
+    ],
+    "description": "",
+    "name": "Beefy",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "beets-sts",
+    "url": "https://beets.fi/stake",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/beets-lst"
+    ],
+    "description": "",
+    "name": "Beets Staked Sonic",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "berachain-honey",
+    "url": "https://www.honey.berachain.com",
+    "logosUri": [
+      "https://icons.llama.fi/honey.jpg"
+    ],
+    "description": "",
+    "name": "Honey (Berachain)",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "compound-v2",
+    "url": "https://compound.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/compound.png"
+    ],
+    "description": "",
+    "name": "Compound v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "venus",
+    "url": "https://venus.io/",
+    "logosUri": [],
+    "description": "",
+    "name": "Venus",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      }
+    ]
+  },
+  {
+    "slug": "apeswap-lending",
+    "url": "https://apeswap.finance/",
+    "logosUri": [],
+    "description": "",
+    "name": "Apeswap (Lending)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "flux-finance",
+    "url": "https://fluxfinance.com/",
+    "logosUri": [],
+    "description": "",
+    "name": "Flux Finance",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "compound-v3",
+    "url": "https://compound.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/compound.png"
+    ],
+    "description": "",
+    "name": "Compound v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "convex-lp",
+    "url": "https://convex.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/convex-finance.jpg"
+    ],
+    "description": "",
+    "name": "Convex (LP)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "aura-lp",
+    "url": "https://www.aura.finance/",
+    "logosUri": [],
+    "description": "",
+    "name": "Aura (LP)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "convex",
+    "url": "https://convex.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/convex-finance.jpg"
+    ],
+    "description": "",
+    "name": "Convex",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "curve-dex",
+    "url": "https://curve.fi/",
+    "logosUri": [
+      "https://resources.curve.fi/images/branding/crv.png"
+    ],
+    "description": "",
+    "name": "Curve",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "curve-gauge",
+    "url": "https://curve.fi/",
+    "logosUri": [
+      "https://resources.curve.fi/images/branding/crv.png"
+    ],
+    "description": "",
+    "name": "Curve (Gauge)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "dinero-lst",
+    "url": "https://dinero.xyz",
+    "logosUri": [
+      "https://icons.llama.fi/dinero.png"
+    ],
+    "description": "",
+    "name": "Dinero BeraEth, ZkEth",
+    "chains": [
+      {
+        "id": 324,
+        "name": "zksync"
+      },
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "dinero-pxeth",
+    "url": "https://dineroismoney.com/",
+    "logosUri": [
+      "https://icons.llama.fi/dinero-(pirex-eth).jpg"
+    ],
+    "description": "",
+    "name": "Dinero (pxETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "erc20",
+    "url": "https://eips.ethereum.org/EIPS/eip-20",
+    "logosUri": [],
+    "description": "ERC20 standard interface for tokens within smart contracts.",
+    "name": "ERC20",
+    "chains": []
+  },
+  {
+    "slug": "erc4626",
+    "url": "https://eips.ethereum.org/EIPS/eip-4626",
+    "logosUri": [],
+    "description": "Tokenized Vaults with a single underlying EIP-20 token",
+    "name": "ERC4626 Standard",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "fraxlend",
+    "url": "https://defillama.com/protocol/fraxlend",
+    "logosUri": [
+      "https://icons.llama.fi/frax.jpg"
+    ],
+    "description": "",
+    "name": "Fraxlend",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "curve-savings-crvusd",
+    "url": "https://curve.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/crvusd"
+    ],
+    "description": "",
+    "name": "Curve Savings",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "inverse-staking",
+    "url": "https://www.inverse.finance/sINV",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/inverse-finance"
+    ],
+    "description": "",
+    "name": "Inverse Finance sTokens",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "gearbox-v3",
+    "url": "https://gearbox.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/gearbox.jpg"
+    ],
+    "description": "",
+    "name": "Gearbox v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "frax-sfrxeth",
+    "url": "https://app.frax.finance/frxeth/mint",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/frax-ether"
+    ],
+    "description": "",
+    "name": "Frax sfrxEth",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "ethena-susde",
+    "url": "https://ethena.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/ethena.jpg"
+    ],
+    "description": "",
+    "name": "Ethena (sUSDE)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "dolomite-erc4626",
+    "url": "https://dolomite.io/",
+    "logosUri": [],
+    "description": "",
+    "name": "Dolomite Vaults",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "gmx-staking",
+    "url": "https://gmx.io/",
+    "logosUri": [
+      "https://icons.llama.fi/gmx-v2.png"
+    ],
+    "description": "",
+    "name": "GMX (Staking)",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "goldilocks",
+    "url": "https://goldilocks.com/",
+    "logosUri": [
+      "https://icons.llama.fi/goldilocks.png"
+    ],
+    "description": "",
+    "name": "Goldilocks",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "harvest",
+    "url": "https://harvest.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/harvest-finance.png"
+    ],
+    "description": "",
+    "name": "Harvest",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      }
+    ]
+  },
+  {
+    "slug": "infrared-ibera",
+    "url": "https://infrared.finance/ibera",
+    "logosUri": [
+      "https://infrared.finance/_next/static/media/ibera.a6d10126.svg"
+    ],
+    "description": "",
+    "name": "Infrared Finance iBERA",
+    "chains": [
+      {
+        "id": 80094,
+        "name": "berachain"
+      }
+    ]
+  },
+  {
+    "slug": "ipor-lp",
+    "url": "https://ipor.com/",
+    "logosUri": [
+      "https://icons.llama.fi/ipor.jpg"
+    ],
+    "description": "",
+    "name": "Ipor (LP)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "kelp-ageth-wrapped",
+    "url": "https://kelpdao.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/kelp-dao"
+    ],
+    "description": "",
+    "name": "Kelp (AgEth Wrapped on L2s)",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "kelp-rseth-wrapped",
+    "url": "https://radiant.capital/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/kelp-dao"
+    ],
+    "description": "",
+    "name": "Kelp WRSETH",
+    "chains": [
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "kelp-ageth",
+    "url": "https://kelpdao.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/kelp-dao"
+    ],
+    "description": "",
+    "name": "Kelp (AgEth)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "kelp-rseth",
+    "url": "https://kelpdao.xyz",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/kelp-dao"
+    ],
+    "description": "",
+    "name": "Kelp",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      }
+    ]
+  },
+  {
+    "slug": "kernel-kreth",
+    "url": "https://kernelprotocol.com/",
+    "logosUri": [
+      "https://icons.llama.fi/kernel-protocol.jpg"
+    ],
+    "description": "",
+    "name": "Kernel (krETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "kiln-vaults",
+    "url": "https://kiln.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/kiln.png"
+    ],
+    "description": "",
+    "name": "Kiln",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "pendle-sy",
+    "url": "https://pendle.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/pendle.jpg"
+    ],
+    "description": "",
+    "name": "Pendle (SY)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "permit2",
+    "url": "https://etherscan.io/address/0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    "logosUri": [],
+    "description": "",
+    "name": "Permit2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "pickle-jars",
+    "url": "https://pickle.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/pickle.svg"
+    ],
+    "description": "",
+    "name": "Pickle Finance (Jars)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "pol-migrator",
+    "url": "https://polygon.technology/",
+    "logosUri": [
+      "https://icons.llama.fi/polygon.jpg"
+    ],
+    "description": "",
+    "name": "Polygon Migrator",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "pooltogether-vaults",
+    "url": "https://pooltogether.com",
+    "logosUri": [
+      "https://icons.llama.fi/pooltogether-v5.png"
+    ],
+    "description": "",
+    "name": "Pooltogether (Vaults)",
+    "chains": [
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "resolv-wstusr",
+    "url": "https://resolv.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/protocols/resolv.jpg"
+    ],
+    "description": "",
+    "name": "Resolv Wrapped stUsr",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "euler-v2",
+    "url": "https://euler.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/euler.svg"
+    ],
+    "description": "",
+    "name": "Euler V2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "fluid",
+    "url": "https://www.fluid.instadapp.io/",
+    "logosUri": [
+      "https://icons.llama.fi/fluid.png"
+    ],
+    "description": "",
+    "name": "Fluid",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "frax-frxeth",
+    "url": "https://app.frax.finance/frxeth/mint",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/frax-ether"
+    ],
+    "description": "",
+    "name": "Frax_Frxeth",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "gearbox",
+    "url": "https://gearbox.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/gearbox.jpg"
+    ],
+    "description": "",
+    "name": "Gearbox",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "genesis-geneth",
+    "url": "https://www.genesislrt.com",
+    "logosUri": [
+      "https://icons.llama.fi/genesislrt-(native-restaking).png"
+    ],
+    "description": "",
+    "name": "Genesis geneth",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "renzo-pzeth",
+    "url": "https://www.renzoprotocol.com",
+    "logosUri": [
+      "https://icons.llama.fi/renzo.png"
+    ],
+    "description": "",
+    "name": "Renzo (pzETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-rtokens",
+    "url": "https://reserve.org/protocol/rtokens/",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (RTokens)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-aave",
+    "url": "https://reserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Aave)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-compound-v3",
+    "url": "https://reserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Compound v3)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-compound",
+    "url": "https://reserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Compound)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "reserve-wrapped-convex",
+    "url": "https://reserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/reserve.png"
+    ],
+    "description": "",
+    "name": "Reserve (Wrapped Convex)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "rocketpool",
+    "url": "https://rocketpool.net/",
+    "logosUri": [
+      "https://icons.llama.fi/rocket-pool.jpg"
+    ],
+    "description": "",
+    "name": "Rocket Pool",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "origin-oeth",
+    "url": "https://app.oeth.com/",
+    "logosUri": [
+      "https://icons.llama.fi/origin-ether.png"
+    ],
+    "description": "",
+    "name": "Origin Ether (oETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "origin-os",
+    "url": "https://app.originprotocol.com/#/os/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/origin-sonic"
+    ],
+    "description": "",
+    "name": "Origin Sonic (oS)",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "stone-eth",
+    "url": "https://app.stakestone.io/u/stake",
+    "logosUri": [
+      "https://icons.llama.fi/stakestone.jpg"
+    ],
+    "description": "",
+    "name": "StakeStone (STONE)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "satlayer-vaults",
+    "url": "https://app.satlayer.io",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/satlayer"
+    ],
+    "description": "",
+    "name": "Satlayer BTC Vaults",
+    "chains": [
+      {
+        "id": 80000,
+        "name": "cartio"
+      }
+    ]
+  },
+  {
+    "slug": "silo-protected",
+    "url": "https://www.silo.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/silo-finance.png"
+    ],
+    "description": "",
+    "name": "Silo Protected",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "veda-usual-bera-vault",
+    "url": "https://veda.tech/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Veda Usual Bera Vault (beraUSD0++)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "usual-earn",
+    "url": "https://usual.money/",
+    "logosUri": [
+      "https://icons.llama.fi/usual-money.png"
+    ],
+    "description": "",
+    "name": "Usual Money",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "rings-scusd",
+    "url": "https://rings.money/",
+    "logosUri": [
+      ""
+    ],
+    "description": "",
+    "name": "Rings_Scusd",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "rings-stkscusd",
+    "url": "https://rings.money/",
+    "logosUri": [],
+    "description": "",
+    "name": "Rings staked scusd",
+    "chains": [
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "vaultcraft",
+    "url": "https://vaultcraft.io/",
+    "logosUri": [
+      "https://icons.llama.fi/vaultcraft.png"
+    ],
+    "description": "",
+    "name": "VaultCraft",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "vector-sveth",
+    "url": "https://www.vectorreserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/vector-reserve.jpg"
+    ],
+    "description": "",
+    "name": "Vector Reserve (svETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "vector-veth",
+    "url": "https://www.vectorreserve.com/",
+    "logosUri": [
+      "https://icons.llama.fi/vector-reserve.jpg"
+    ],
+    "description": "",
+    "name": "Vector Reserve (vETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "prisma-earn",
+    "url": "https://prismafinance.com/",
+    "logosUri": [
+      "https://icons.llama.fi/prismalst.jpg"
+    ],
+    "description": "",
+    "name": "Prisma (Earn)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "pumpbtc-locked",
+    "url": "https://mainnet.pumpbtc.xyz/",
+    "logosUri": [
+      "https://icons.llama.fi/pumpbtc.png"
+    ],
+    "description": "",
+    "name": "PumpBtc locked",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "pumpbtc",
+    "url": "https://mainnet.pumpbtc.xyz/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/pumpbtc.jpg"
+    ],
+    "description": "",
+    "name": "Pump Btx",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "renzo-ezeth",
+    "url": "https://www.renzoprotocol.com",
+    "logosUri": [
+      "https://icons.llama.fi/renzo.png"
+    ],
+    "description": "",
+    "name": "Renzo (ezETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "aave-static-atokens",
+    "url": "https://www.aave.org/",
+    "logosUri": [
+      "https://icons.llama.fi/aave-v2.png"
+    ],
+    "description": "",
+    "name": "Aave Static Atokens",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      }
+    ]
+  },
+  {
+    "slug": "aave-v2",
+    "url": "https://www.aave.org/",
+    "logosUri": [
+      "https://icons.llama.fi/aave-v2.png"
+    ],
+    "description": "",
+    "name": "Aave v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      }
+    ]
+  },
+  {
+    "slug": "radiant-v2",
+    "url": "https://radiant.capital/",
+    "logosUri": [],
+    "description": "",
+    "name": "Radiant V2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      }
+    ]
+  },
+  {
+    "slug": "aave-v3",
+    "url": "https://www.aave.org/",
+    "logosUri": [
+      "https://icons.llama.fi/aave-v3.png"
+    ],
+    "description": "",
+    "name": "Aave v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "zerolend",
+    "url": "https://zerolend.xyz",
+    "logosUri": [],
+    "description": "",
+    "name": "ZeroLend",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      }
+    ]
+  },
+  {
+    "slug": "spark-lend",
+    "url": "https://spark.xyz",
+    "logosUri": [],
+    "description": "",
+    "name": "Spark Lend",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      }
+    ]
+  },
+  {
+    "slug": "angle-transmuter",
+    "url": "https://angle.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/angle.jpg"
+    ],
+    "description": "",
+    "name": "Angle (Transmuter)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "ankr-staking",
+    "url": "https://ankr.com",
+    "logosUri": [
+      "https://icons.llama.fi/ankr.jpg"
+    ],
+    "description": "",
+    "name": "Ankr (Staking)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "aura",
+    "url": "https://aura.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/aura.png"
+    ],
+    "description": "",
+    "name": "Aura",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "avalon-susda",
+    "url": "https://app.stakestone.io/u/vault/detail/bera",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/stakestone"
+    ],
+    "description": "",
+    "name": "Avalon Staking USDa",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "balancer-gauge",
+    "url": "https://balancer.fi/",
+    "logosUri": [
+      "https://github.com/balancer/brand-assets/blob/main/logo/no-container/logo-balancer-black.png"
+    ],
+    "description": "",
+    "name": "Balancer (Gauge)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "balancer-v2",
+    "url": "https://balancer.fi/",
+    "logosUri": [
+      "https://github.com/balancer/brand-assets/blob/main/logo/no-container/logo-balancer-black.png"
+    ],
+    "description": "",
+    "name": "Balancer v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      }
+    ]
+  },
+  {
+    "slug": "velodrome-v2-staking",
+    "url": "https://app.velodrome.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/velodrome-v2.png"
+    ],
+    "description": "",
+    "name": "Velodrome v2 (Staking)",
+    "chains": [
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "velodrome-v2",
+    "url": "https://app.velodrome.finance/liquidity",
+    "logosUri": [
+      "https://icons.llama.fi/velodrome-v2.png"
+    ],
+    "description": "",
+    "name": "Velodrome v2",
+    "chains": [
+      {
+        "id": 10,
+        "name": "optimism"
+      }
+    ]
+  },
+  {
+    "slug": "aerodrome",
+    "url": "https://aerodrome.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/aerodrome.png"
+    ],
+    "description": "",
+    "name": "Aerodrome",
+    "chains": [
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "yearn-v2",
+    "url": "https://yearn.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/yearn-finance.jpg"
+    ],
+    "description": "",
+    "name": "Yearn Finance v2",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      }
+    ]
+  },
+  {
+    "slug": "yearn-v3",
+    "url": "https://yearn.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/yearn-finance.jpg"
+    ],
+    "description": "",
+    "name": "Yearn Finance v3",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      }
+    ]
+  },
+  {
+    "slug": "yieldnest-restake",
+    "url": "https://www.yieldnest.finance/",
+    "logosUri": [
+      "https://icons.llamao.fi/icons/protocols/yieldnest"
+    ],
+    "description": "",
+    "name": "Yieldnest (Restake)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "vesper",
+    "url": "https://vesper.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/vesper.jpg"
+    ],
+    "description": "",
+    "name": "Vesper",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 43114,
+        "name": "avalanche"
+      }
+    ]
+  },
+  {
+    "slug": "wrapped-lido",
+    "url": "https://lido.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/lido.png"
+    ],
+    "description": "",
+    "name": "Wrapped Lido (wstETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "wrapped-etherfi",
+    "url": "https://www.ether.fi/",
+    "logosUri": [
+      "https://icons.llama.fi/ether.fi.jpg"
+    ],
+    "description": "",
+    "name": "Wrapped ether.fi (weETH)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "wrapped-native",
+    "url": "https://weth.io/",
+    "logosUri": [
+      "https://assets.coingecko.com/coins/images/2518/standard/weth.png?1696503332"
+    ],
+    "description": "ERC-20 token representation of native currency",
+    "name": "Wrapped Native",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      },
+      {
+        "id": 137,
+        "name": "polygon"
+      },
+      {
+        "id": 42161,
+        "name": "arbitrum"
+      },
+      {
+        "id": 10,
+        "name": "optimism"
+      },
+      {
+        "id": 56,
+        "name": "binance"
+      },
+      {
+        "id": 8453,
+        "name": "base"
+      },
+      {
+        "id": 100,
+        "name": "gnosis"
+      },
+      {
+        "id": 59144,
+        "name": "linea"
+      },
+      {
+        "id": 324,
+        "name": "zksync"
+      },
+      {
+        "id": 80000,
+        "name": "cartio"
+      },
+      {
+        "id": 80094,
+        "name": "berachain"
+      },
+      {
+        "id": 146,
+        "name": "sonic"
+      }
+    ]
+  },
+  {
+    "slug": "ycrv",
+    "url": "https://yearn.finance/",
+    "logosUri": [
+      "https://icons.llama.fi/yearn-finance.jpg"
+    ],
+    "description": "",
+    "name": "Yearn Finance (yCRV)",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  },
+  {
+    "slug": "coinshift",
+    "url": "https://www.coinshift.xyz/",
+    "logosUri": [
+      "https://coinshift.global/images/logo.svg"
+    ],
+    "description": "",
+    "name": "Coinshift csUSDL",
+    "chains": [
+      {
+        "id": 1,
+        "name": "mainnet"
+      }
+    ]
+  }
+]

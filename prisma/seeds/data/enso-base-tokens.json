@@ -1,0 +1,866 @@
+{
+  "data": [
+    {
+      "chainId": 146,
+      "address": "0x21FeD4063BF8ebf4F51f4ADF4ECFC9717aa4cA9D",
+      "decimals": 18,
+      "name": "High Speed Perfect Beets",
+      "symbol": "15BEETS-25stS-60LUDWIG",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x6c7b6f02e9f5E525fc70f120f47D4A893f977d0E",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-8-WETH-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x43026d483f42fB35efe03c20B251142D022783f2",
+      "decimals": 18,
+      "name": "Boosted Stable Rings",
+      "symbol": "bpt-scusd-beefyusdc",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xF77CeeD15596BfC127D17bA45dEA9767BC349Be0",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-2-USDC.e-scUSD",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xE54DD58a6d4e04687f2034dd4dDAb49da55F8afF",
+      "decimals": 18,
+      "name": "Echoes of Ether",
+      "symbol": "bpt-eth-sceth",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x31d3419c0A2780836C603C086266f803f655e7F0",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-30-WETH-SWPx",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x38cFA6cB37d074B6E954C52d10a4cf0e4268607b",
+      "decimals": 18,
+      "name": "Equalizer Classic AMM - Wrapped Sonic paired with PaintSwap",
+      "symbol": "v-wS/BRUSH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xc4A71981DC8ee8ee704b6217DaebAd6ECe185aeb",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-27-OS-wS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xfD10ac67449C16F368a4BB49f544E0A865A77614",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-7-wS-stS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xfDEc32751Faade573B285C8CC606677beE656A4C",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-19-wS-SWPx",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xa68D5DbAe00960De66DdEaD4d53faea39f21983b",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-6-stS-wS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xc263e421Df94bdf57B27120A9B7B8534A6901D95",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-0-USDC.e-wS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x04A5AE9fc90A66244E1448A01adA904A68CcCc68",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-23-WETH-wS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xB68236718883c7Ed3566Cc2a14e18568982C6A15",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic wS-WETH",
+      "symbol": "cowShadowSonicwS-WETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xBb8aE5b889243561ac9261F22F592B72250AFd1F",
+      "decimals": 18,
+      "name": "StableV1 AMM - USDC.e/scUSD",
+      "symbol": "sAMM-USDC.e/scUSD",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x5F62d612c69fF7BE3FBd9a0cD530D57bCbC7b642",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-1-wS-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x72cE11866e242Cd7d302cDAE9588cB32Cf2a2bB1",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic SHADOW-stS",
+      "symbol": "cowShadowSonicSHADOW-stS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xcD7D89FF7bB263a5C45aD81ddE4Eed5892Ad540C",
+      "decimals": 18,
+      "name": "Equalizer Classic AMM - Wrapped Sonic paired with Wrapped Ether on Sonic",
+      "symbol": "v-wS/WETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x25ca5451CD5a50AB1d324B5E64F32C0799661891",
+      "decimals": 18,
+      "name": "Put A Ring On It",
+      "symbol": "BPT-scUSD-stS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xc46833F6217Db6586fD129cC2f61361dfCE4c21D",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic wS-USDC.e",
+      "symbol": "cowShadowSonicwS-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x0f385EEa80cB6909A1dbA5CDc763e97F8589f47D",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-35-WETH-scETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xF19748a0E269c6965a84f8C98ca8C47A064D4dd0",
+      "decimals": 18,
+      "name": "",
+      "symbol": "",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xDd4E83EDD68AcD40139923B06C51da23C76C2C43",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic WETH-USDC.e",
+      "symbol": "cowShadowSonicWETH-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x5De651be21beeDe8ABE808D1425b278ac4a3604B",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-18-USDC.e-SWPx",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x03BdAf7eb1b109E3C3348ee98cde734a82aea8FD",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic mooBIFI-USDC.e",
+      "symbol": "cowShadowSonicmooBIFI-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x374641076B68371e69D03C417DAc3E5F236c32FA",
+      "decimals": 18,
+      "name": "Staked Sonic Symphony",
+      "symbol": "bpt-sss",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xc5AB8d98F959453E416b2F15848a02CC99bc695e",
+      "decimals": 18,
+      "name": "Ringing of Painted Melodies",
+      "symbol": "80BRUSH-20scUSD",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x713FB5036dC70012588d77a5B066f1Dd05c712d7",
+      "decimals": 18,
+      "name": "Staked Sonic & Circle Concerto",
+      "symbol": "BPT-USDCe-stS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xB78CdF29F7E563ea447feBB5b48DDe9bC3278Ba4",
+      "decimals": 18,
+      "name": "Equalizer Stableswap 2pool - Bridged USDC (Sonic Labs) paired with Sonic USD",
+      "symbol": "s-USDC.e/scUSD",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xCd4D2b142235D5650fFA6A38787eD0b7d7A51c0C",
+      "decimals": 18,
+      "name": "Ringing Stable Beets",
+      "symbol": "bpt-rsb",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x776C31466F19D4e2c71bCE16c0549a8Bc0E37e17",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-3-scUSD-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xdc85F86d5E3189e0d4a776e6Ae3B3911eC7B0133",
+      "decimals": 18,
+      "name": "Equalizer Classic AMM - Wrapped Sonic paired with Bridged USDC (Sonic Labs)",
+      "symbol": "v-wS/USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x6E8A8037533aA74FfFEb92390E443294d034d769",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-34-scETH-WETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x3E11010699adc07C950d854A8d442F956208F895",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-32-OS-SWPx",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x36dA3b8156C421118d1cc27956454C49eeC5fC1B",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-26-wS-OS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "decimals": 6,
+      "name": "Sonic Bridged USDC e  Sonic ",
+      "symbol": "USDCE",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53064/thumb/logo.png?1735179479"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xB75C9073ea00AbDa9ff420b5Ae46fEe248993380",
+      "decimals": 18,
+      "name": "Equalizer Stableswap 2pool - Wrapped Sonic paired with Beets Staked Sonic",
+      "symbol": "s-wS/stS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xbCbC5777537c0D0462fb82BA48Eeb6cb361E853f",
+      "decimals": 18,
+      "name": "Equalizer Classic AMM - Bridged USDC (Sonic Labs) paired with Wrapped Ether on Sonic",
+      "symbol": "v-USDC.e/WETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "decimals": 18,
+      "name": "Sonic",
+      "symbol": "S",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xa1B27A7060B38a4d54921bcacD5D3E312e3F2aFA",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-45-frxETH-scETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x1B282d69a54a983714bB6Bea8cAAcB29D4cb45B5",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-42-frxUSD-scUSD",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7c0e966462208dDBC7bC7621a458aa09C0e4A525",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-48-USDT-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xC751b73E97e2Bd7D141989Ba418772223dB93664",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-49-USDC.e-USDT",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x5Eb126927242BaB536Ea9067624e78d8f7A9d4Ce",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic wS-BRUSH",
+      "symbol": "cowShadowSonicwS-BRUSH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x541FD749419CA806a8bc7da8ac23D346f2dF8B77",
+      "decimals": 18,
+      "name": "Solv BTC",
+      "symbol": "SolvBTC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xCC0966D8418d412c599A6421b760a847eB169A8c",
+      "decimals": 18,
+      "name": "SolvBTC Babylon",
+      "symbol": "SolvBTC.BBN",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xfA85Fe5A8F5560e9039C04f2b0a90dE1415aBD70",
+      "decimals": 18,
+      "name": "Wrapped anS",
+      "symbol": "wanS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C",
+      "decimals": 18,
+      "name": "Hey Anon",
+      "symbol": "ANON",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/52961/thumb/ICON.png?1734862960"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "decimals": 18,
+      "name": "Bridged Wrapped Ether  Sonic ",
+      "symbol": "WETH",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53332/thumb/weth_2.jpg?1736149977"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7D31356E48A296A09b9Aadb495B749fc83a6b62f",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic USDT-USDC.e",
+      "symbol": "cowShadowSonicUSDT-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7168464Ac7330EC5177694005e60FBe319DC40c2",
+      "decimals": 18,
+      "name": "Cow Shadow Sonic SHADOW-USDC.e",
+      "symbol": "cowShadowSonicSHADOW-USDC.e",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xf26Ff70573ddc8a90Bd7865AF8d7d70B8Ff019bC",
+      "decimals": 18,
+      "name": "Eggs Finance",
+      "symbol": "EGGS",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/54477/thumb/eggs-logo200px.png?1739954642"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x5746f9777954e8DD2835020ba8b7c950f52C6251",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-54-sfrxETH-frxETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x59BFaa386CcBf648eaCd28c91834Ce7C6C8E773A",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-62-WBTC-scBTC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xe1D0c34d6A7eEa99C87005147D950BE89294C632",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-63-scBTC-WBTC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x8c30686DC5AA85C5861163174BDEb22A011bb749",
+      "decimals": 18,
+      "name": "ICHI Vault Liquidity",
+      "symbol": "IV-SWAPX-55-frxETH-sfrxETH",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+      "decimals": 8,
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
+      "decimals": 8,
+      "name": "Lombard Staked Bitcoin",
+      "symbol": "LBTC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7870ddFd5ACA4E977B2287e9A212bcbe8FC4135a",
+      "decimals": 6,
+      "name": "WMoo SiloV2 Sonic USDC.e (wS Market)",
+      "symbol": "wmooSiloV2SonicUSDC.e (wS Market)",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x005851f943ee2957B1748957F26319e4f9EdeBC1",
+      "decimals": 18,
+      "name": "Silver",
+      "symbol": "AG",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/52967/thumb/SS_logo.png?1734881325"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7F144F8691CbA3d2EfD8e5bcf042f9303EE31a46",
+      "decimals": 18,
+      "name": "Aurum",
+      "symbol": "AUR",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x9fDbC3f8Abc05Fa8f3Ad3C17D2F806c1230c4564",
+      "decimals": 18,
+      "name": "GOGGLES",
+      "symbol": "GOGLZ",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53257/thumb/goglz_2.png?1735902919"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7F883dA3B0d77978075f7C9c03E1B9F461CA1B8d",
+      "decimals": 9,
+      "name": "Muttski",
+      "symbol": "WOOF",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/54318/thumb/muttski.jpg?1739233507"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x6fB9897896Fe5D05025Eb43306675727887D0B7c",
+      "decimals": 18,
+      "name": "Hedgy the hedgehog",
+      "symbol": "HEDGY",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/51742/thumb/cVKJGU_W_400x400.jpg?1731923818"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x9C5100BA377e3E9DB247f6d4bc7FFc9C24b59d08",
+      "decimals": 18,
+      "name": "SonicSuperFly",
+      "symbol": "ZUPA",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x949185D3BE66775Ea648F4a306740EA9eFF9C567",
+      "decimals": 18,
+      "name": "Yel Finance",
+      "symbol": "YEL",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/17429/thumb/Logo200.png?1696516976"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x17Af1Df44444AB9091622e4Aa66dB5BB34E51aD5",
+      "decimals": 18,
+      "name": "TinHatCat",
+      "symbol": "THC",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/35911/thumb/photo_2024-01-16_17-31-36-removebg-preview.png?1710180825"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xBC0d0650412EF353D672c0Bbd12eFFF90591B251",
+      "decimals": 18,
+      "name": "FutureStarter",
+      "symbol": "FS",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/19821/thumb/13237.png?1696519240"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xB4F58eeAbE36711D72e99f35cbf36210561522bE",
+      "decimals": 18,
+      "name": "PHANIC",
+      "symbol": "PHANIC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7A0C53F7eb34C5BC8B01691723669adA9D6CB384",
+      "decimals": 18,
+      "name": "SpookyToken V2",
+      "symbol": "BOO",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x05e31a691405d06708A355C029599c12d5da8b28",
+      "decimals": 18,
+      "name": "Fantomsonicinu",
+      "symbol": "FSONIC",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53278/thumb/VaSB8Eil_400x400.jpg?1735953637"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x486B6Fa0419b33a0c7A6e4698c231D7E2f2D5299",
+      "decimals": 18,
+      "name": "Moon Bay",
+      "symbol": "MOON",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53021/thumb/moonbay.png?1735003620"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xddF26B42C1d903De8962d3F79a74a501420d5F19",
+      "decimals": 18,
+      "name": "Equalizer on Sonic",
+      "symbol": "EQUAL",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53369/thumb/hq_png_icon_file.png?1736204170"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7AD5935EA295c4E743e4f2f5B4CDA951f41223c2",
+      "decimals": 18,
+      "name": "SACRA",
+      "symbol": "SACRA",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53465/thumb/sacra_red-and-white-1200px.png?1736452758"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xfC0dd337b92Baa949bC5D25FD9A99Cb3b6873204",
+      "decimals": 18,
+      "name": "Sacra Gem 1",
+      "symbol": "SACRA_GEM_1",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x6881B80ea7C858E4aEEf63893e18a8A36f3682f3",
+      "decimals": 18,
+      "name": "Navigator Exchange",
+      "symbol": "NAVI",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/28547/thumb/navi.jpg?1736302094"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x4EEC869d847A6d13b0F6D1733C5DEC0d1E741B4f",
+      "decimals": 18,
+      "name": "Indi",
+      "symbol": "INDI",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/52926/thumb/photo_2024-12-12_12-50-37.jpg?1734706774"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x7A08Bf5304094CA4C7b4132Ef62b5EDc4a3478B7",
+      "decimals": 18,
+      "name": "Sonic Eco",
+      "symbol": "ECO",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53346/thumb/eco_logo_100x100_0xb8a32897016c1b2ee0797090162eafe58f032795.png?1736163012"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xE51EE9868C1f0d6cd968A8B8C8376Dc2991BFE44",
+      "decimals": 18,
+      "name": "Paintswap",
+      "symbol": "BRUSH",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/18579/thumb/ps-cmc-200x200.png?1707862125"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xd6a69EBFa44f78cEe454A2Df2C77751A42f8f38c",
+      "decimals": 6,
+      "name": "Aurum Sonic USDC",
+      "symbol": "auUSDC",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x56192E94434c4fd3278b4Fa53039293fB00DE3DB",
+      "decimals": 18,
+      "name": "ThankYouSonicGod",
+      "symbol": "TYSG",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x284D81e48fBc782Aa9186a03a226690aEA5cBe0E",
+      "decimals": 18,
+      "name": "Atoll ETH  Sonic ",
+      "symbol": "ATETH",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53797/thumb/IMG_7045.jpeg?1737477230"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xf26B3Fd147619Df61D4c1D0a9F7200B31A73FAfa",
+      "decimals": 18,
+      "name": "Missor",
+      "symbol": "Missor",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xA04BC7140c26fc9BB1F36B1A604C7A5a88fb0E70",
+      "decimals": 18,
+      "name": "SwapX",
+      "symbol": "SWPX",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53530/thumb/IMG_6986.jpeg?1736579863"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x0a54364631Ea37813a63edb3bBa1C46f8d8304B2",
+      "decimals": 18,
+      "name": "Sonic Donks",
+      "symbol": "DONKS",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x41211648C51AcB9A5F39A93C657e894A0bdB88e4",
+      "decimals": 18,
+      "name": "Tails",
+      "symbol": "TAILS",
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53277/thumb/new_logo.png?1735923559"
+      ],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x50Bc6e1DfF8039A4b967c1BF507ba5eA13fa18B6",
+      "decimals": 18,
+      "name": "sDOG",
+      "symbol": "sDOG",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xBe27993204Ec64238F71A527B4c4D5F4949034C3",
+      "decimals": 6,
+      "name": "PT Wrapped stkscUSD 29MAY2025",
+      "symbol": "PT-wstkscUSD-29MAY2025",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0xa2161E75EDf50d70544e6588788A5732A3105c00",
+      "decimals": 18,
+      "name": "PT Wrapped stkscETH 29MAY2025",
+      "symbol": "PT-wstkscETH-29MAY2025",
+      "logosUri": [],
+      "type": "base"
+    },
+    {
+      "chainId": 146,
+      "address": "0x78a76316F66224CBaCA6e70acB24D5ee5b2Bd2c7",
+      "decimals": 18,
+      "name": "Stability",
+      "symbol": "STBL",
+      "logosUri": [],
+      "type": "base"
+    }
+  ],
+  "meta": {
+    "total": 90,
+    "lastPage": 1,
+    "currentPage": 1,
+    "perPage": 1000,
+    "prev": null,
+    "next": null
+  }
+}

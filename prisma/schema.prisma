@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Chain {
+    id          Int        @id
+    name        String
+    geckoId     String?
+    defillamaId String?
+    createdAt   DateTime   @default(now())
+    updatedAt   DateTime   @updatedAt
+    pools       Pool[]
+    tokens      Token[]
+    protocols   Protocol[]
+}
+
+model Pool {
+    id             String   @id @default(cuid())
+    name           String
+    receiptTokenId String
+    defillamaId    String?
+    symbol         String
+    createdAt      DateTime @default(now())
+
+    chainId    Int
+    chain      Chain    @relation(fields: [chainId], references: [id])
+    protocolId String
+    protocol   Protocol @relation(fields: [protocolId], references: [id])
+
+    isStablecoin Boolean @default(false)
+    poolMeta     String?
+
+    underlyingTokens String[]
+
+    updatedAt DateTime @updatedAt
+}
+
+model Token {
+    id           String      @id @default(cuid())
+    logosUri     String[]    @default([])
+    coingeckoId  String?
+    isStablecoin Boolean     @default(false)
+    name         String
+    symbol       String
+    decimals     Int
+    createdAt    DateTime    @default(now())
+    risks        TokenRisk[]
+
+    chainId Int
+    chain   Chain @relation(fields: [chainId], references: [id])
+}
+
+model TokenRisk {
+    id        String   @id @default(cuid())
+    tokenId   String
+    token     Token    @relation(fields: [tokenId], references: [id])
+    riskScore Float    @default(1.5)
+    createdAt DateTime @default(now())
+}
+
+model Protocol {
+    id          String   @id @default(cuid())
+    name        String
+    defillamaId String?
+    ensoId      String?  @unique
+    logosUri    String[] @default([])
+
+    chainId Int
+    chain   Chain @relation(fields: [chainId], references: [id])
+
+    createdAt DateTime       @default(now())
+    updatedAt DateTime       @updatedAt
+    risks     ProtocolRisk[]
+    pools     Pool[]
+}
+
+model ProtocolRisk {
+    id                    String   @id @default(cuid())
+    protocolId            String
+    protocol              Protocol @relation(fields: [protocolId], references: [id])
+    codeSecurityScore     Float
+    protocolMaturityScore Float
+    economicDesignScore   Float
+    operationalRiskScore  Float
+    liquidityProfileScore Float
+    finalPRF              Float
+    grade                 String
+    createdAt             DateTime @default(now())
+    updatedAt             DateTime @updatedAt
+}
