@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { CoinGeckoAPI } from '../../agents/plugins/coingecko/api';
+import { CoinGeckoAPI } from '../../agents/tools/coingecko/api';
 
 const prisma = new PrismaClient();
 const coinGeckoService = new CoinGeckoAPI(process.env.COINGECKO_API_KEY);

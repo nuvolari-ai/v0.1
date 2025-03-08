@@ -2,6 +2,7 @@
 
 import { useAccount } from 'wagmi';
 import { api } from '@nuvolari/trpc/react';
+import { useEffect } from 'react';
 export const Account = () => {
   const { address } = useAccount();
 
@@ -10,6 +11,12 @@ export const Account = () => {
   }, {
     enabled: !!address,
   });
+
+  useEffect(() => {
+    if (account) {
+      console.log(JSON.stringify(account));
+    }
+  }, [account]);
 
 
   return (

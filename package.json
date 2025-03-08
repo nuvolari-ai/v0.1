@@ -38,6 +38,7 @@
     "@goat-sdk/plugin-nansen": "^0.1.5",
     "@goat-sdk/wallet-viem": "^0.2.11",
     "@langchain/core": "^0.3.42",
+    "@langchain/langgraph": "^0.2.54",
     "@prisma/client": "^5.14.0",
     "@rainbow-me/rainbowkit": "^2.2.3",
     "@t3-oss/env-nextjs": "^0.10.1",

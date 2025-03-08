@@ -1,6 +1,6 @@
 import { formatUnits, getAddress } from "viem";
 import { type PrismaClient, type Prisma } from "@prisma/client";
-import { type EnsoAPIClient } from "@nuvolari/agents/plugins/enso/api";
+import { type EnsoAPIClient } from "@nuvolari/agents/tools/enso/api";
 
 
 

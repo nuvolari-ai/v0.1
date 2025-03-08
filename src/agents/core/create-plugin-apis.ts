@@ -1,6 +1,6 @@
-import { EnsoAPIClient } from "../plugins/enso/api";
-import { OctavAPI } from "../plugins/octav-fi/api";
-import { CoinGeckoAPI } from "../plugins/coingecko/api";
+import { EnsoAPIClient } from "../tools/enso/api";
+import { OctavAPI } from "../tools/octav-fi/api";
+import { CoinGeckoAPI } from "../tools/coingecko/api";
 
 /**
  * Creates a new instance of the plugin APIs
