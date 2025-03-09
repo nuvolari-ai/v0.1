@@ -2,6 +2,7 @@ import { tool } from "@langchain/core/tools";
 import { getPoolsByRiskParameters } from "./parameters";
 import { getPoolsByRiskScoreRange } from "@nuvolari/agents/core/_resolvers/pool-risks";
 import { db } from "@nuvolari/server/db";
+import { formatPoolsToCSV } from "@nuvolari/agents/utils/format";
 
 /**
  * Get pools by risk score range
@@ -15,7 +16,7 @@ export const getPoolsByRiskTool = tool(
     });
     
     // Tools must return strings
-    return JSON.stringify(pools);
+    return formatPoolsToCSV(pools);
   },
   {
     name: "get_pools_by_risk",

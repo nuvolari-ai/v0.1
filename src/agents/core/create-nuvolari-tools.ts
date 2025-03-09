@@ -1,7 +1,3 @@
-import { tool } from "@langchain/core/tools";
-import { z } from "zod";
-import { getPoolsByRiskScoreRange } from "@nuvolari/agents/core/_resolvers/pool-risks";
-import { db } from "@nuvolari/server/db";
 import { getPoolsByRiskTool } from "../tools/quant";
 
 /**

@@ -43,7 +43,7 @@ type PoolWithProtocol = Prisma.PoolGetPayload<{
     riskScore: number;
   }
   
-  interface PortfolioSummary {
+export interface PortfolioSummary {
     tokens: TokenBalance[];
     positions: PositionBalance[];
     total: number;
