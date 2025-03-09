@@ -18,13 +18,13 @@ The user's acceptable risk range is from {lowestRisk} to {highestRisk} on a scal
 ## Data Structure:
 
 The portfolio data is provided in CSV format with these sections:
-- PORTFOLIO_SUMMARY: Contains Total Value, Risk Score, and Risk Grade
-- TOKEN_HOLDINGS: Lists all tokens with Symbol, Name, Amount, USD Value, Percentage, Risk Score, Decimals
-- DEFI_POSITIONS: Contains Protocol, Position Name, USD Value, Percentage, Risk Score, Risk Grade
+- PORTFOLIO_SUMMARY: Contains TotalValue,RiskScore,RiskGrade
+- TOKEN_HOLDINGS: Lists all tokens with Symbol,Name,RiskScore,Decimals
+- DEFI_POSITIONS: Contains Protocol,PositionName,RiskScore,RiskGrade
 
 The investment opportunities from the get_pools_by_risk tool contain:
-- YIELD_POOLS: Lists Protocol, ProtocolSlug, Name, APY, Risk Score, Risk Grade, PoolAddress
-- TOKEN_OPPORTUNITIES: Lists Token, Type, APY, Risk Score, Risk Grade, Address
+- YIELD_POOLS: Lists Protocol,ProtocolSlug,Name,APY,RiskScore,RiskGrade,PoolAddress
+- TOKEN_OPPORTUNITIES: Lists Token,RiskScore,Address,Decimals
 
 ## Instructions:
 
@@ -41,7 +41,7 @@ The investment opportunities from the get_pools_by_risk tool contain:
    - Consolidating smaller positions ("dust") into more significant investments
 
 4. Format your response ONLY as a CSV with the following headers:
-   TokenIn,TokenInAmount,TokenInDecimals,TokenOut,ApiCall,InsightShort,InsightDetailed,ProtocolSlug
+   TokenIn,TokenInAmount,TokenInDecimals,TokenOut,ApiCall,InsightShort,InsightDetailed,ProtocolSlug,InsightType
 
 ## Field Guidelines:
 
@@ -49,10 +49,11 @@ The investment opportunities from the get_pools_by_risk tool contain:
 - TokenInAmount: The amount of TokenIn in human-readable format (e.g., 10.5, not raw units)
 - TokenInDecimals: The decimal places of the token to calculate raw amount (amount * 10^decimals)
 - TokenOut: The pool address from YIELD_POOLS or token address from TOKEN_OPPORTUNITIES
-- ApiCall: The formatted URL for API execution (format: https://api.enso.finance/api/v1/shortcuts/route?chainId=1&fromAddress=USER_ADDRESS&receiver=USER_ADDRESS&spender=USER_ADDRESS&amountIn=AMOUNT_IN_RAW&slippage=300&tokenIn=TOKEN_IN_ADDRESS&tokenOut=TOKEN_OUT_ADDRESS&routingStrategy=router)
+- ApiCall: The formatted URL for API execution (format: https://api.enso.finance/api/v1/shortcuts/route?chainId=146&fromAddress=USER_ADDRESS&receiver=USER_ADDRESS&spender=USER_ADDRESS&amountIn=AMOUNT_IN_RAW&slippage=300&tokenIn=TOKEN_IN_ADDRESS&tokenOut=TOKEN_OUT_ADDRESS&routingStrategy=router)
 - InsightShort: A concise title for the recommendation (e.g., "Stake ETH on Lido" or "Add liquidity to USDC/ETH pool")
 - InsightDetailed: A detailed explanation of the recommendation's value (2-3 sentences)
 - ProtocolSlug: Protocol identifier from YIELD_POOLS or "undefined" for TOKEN_OPPORTUNITIES
+- InsightType: "YIELD_POOL" or "TOKEN_OPPORTUNITY"
 
 DO NOT include any introductory text, explanations, or notes outside the CSV format. Return ONLY the CSV content.
 `);

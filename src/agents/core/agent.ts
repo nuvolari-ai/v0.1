@@ -13,7 +13,6 @@ const agentTools = [
  * @returns A compiled LangGraph agent
  */
 export async function createLangGraphAgent(apiKey: string) {
-    // Initialize the LLM
     const llm = new ChatOpenAI({
       modelName: "gpt-4o",
       temperature: 0,
@@ -23,11 +22,8 @@ export async function createLangGraphAgent(apiKey: string) {
     const agent = await createReactAgent({
       llm,
       tools: agentTools,
-      // Use the structured system prompt
-      prompt: systemPrompt
     });
-    
-    return agent;
+    return systemPrompt.pipe(agent)
 }
 
 

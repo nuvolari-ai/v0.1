@@ -1,8 +1,9 @@
 import { PortfolioSummary } from "@nuvolari/server/api/routers/_resolvers/calculate-account-portfolio";
-import { formatPoolsToCSV, formatPortfolioToCSV } from "../utils/format";
+import { formatPoolsToCSV, formatPortfolioToCSV, formatTokensToCSV } from "../utils/format";
 import { NuvolariAgent } from "../core/agent";
 import { db } from "@nuvolari/server/db";
 import { getPoolsByRiskScoreRange } from "../core/_resolvers/pool-risks";
+import { getTokenRisks } from "../core/_resolvers/token-risks";
 
 /**
  * Generate insights based on user's portfolio and risk profile
@@ -26,13 +27,21 @@ export async function generateInsights(
       chainId: 146,
     });
 
-    const opportunitiesCSV = formatPoolsToCSV(poolsData);
+    const tokensData = await getTokenRisks(db, minRiskScore, maxRiskScore);
 
+    console.log("poolsData", poolsData);
+    console.log("tokensData", tokensData);
+
+    const opportunitiesCSV = formatPoolsToCSV(poolsData);
+    const tokensCSV = formatTokensToCSV(tokensData);
+
+    const completeInvestmentOpportunities = opportunitiesCSV + "\n" + tokensCSV;
+    
     const recommendations = await agent.invoke({
       lowestRisk: minRiskScore,
       highestRisk: maxRiskScore,
       portfolio: formattedPortfolio,
-      opportunities: opportunitiesCSV
+      opportunities: completeInvestmentOpportunities
     });
     
     return recommendations.output;
@@ -43,7 +52,7 @@ export async function generateInsights(
 }
 
 
-type Insight = {
+export type Insight = {
   tokenIn: string;
   tokenInAmount: string;
   tokenInDecimals: number;
@@ -52,6 +61,7 @@ type Insight = {
   insightShort: string;
   insightDetailed: string;
   protocolSlug: string;
+  insightType: string;
 }
 
 /**
@@ -60,6 +70,7 @@ type Insight = {
  * @returns Array of structured recommendation objects
  */
 export function parseInsights(csvInsights: string): Array<Insight> {
+  console.log("csvInsights", csvInsights);
   const lines = csvInsights.trim().split('\n');
   const results: Insight[] = [];
   
@@ -78,7 +89,8 @@ export function parseInsights(csvInsights: string): Array<Insight> {
       apiCall,
       insightShort,
       insightDetailed,
-      protocolSlug
+      protocolSlug,
+      insightType
     ] = line.split(',').map(item => item.trim());
     
     results.push({
@@ -89,7 +101,8 @@ export function parseInsights(csvInsights: string): Array<Insight> {
       apiCall: apiCall || '',
       insightShort: insightShort || '',
       insightDetailed: insightDetailed || '',
-      protocolSlug: protocolSlug || ''
+      protocolSlug: protocolSlug || '',
+      insightType: insightType || ''
     });
   }
   

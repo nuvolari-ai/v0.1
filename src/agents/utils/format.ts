@@ -1,6 +1,6 @@
 import { PortfolioSummary } from "@nuvolari/server/api/routers/_resolvers/calculate-account-portfolio";
 import { PoolWithRiskScore } from "../core/_resolvers/pool-risks";
-
+import { TokenWithRiskScore } from "../core/_resolvers/token-risks";
 /**
  * Converts a PortfolioSummary object to the CSV format needed for the DeFi analyst system prompt
  * @param portfolio The portfolio summary returned by calculateAccountPortfolio
@@ -47,8 +47,6 @@ export function formatPortfolioToCSV(portfolio: PortfolioSummary): string {
     return `${portfolioSummary}\n${tokenHoldings}\n${defiPositions}`;
   }
 
-
-
 /**
  * Formats the output from getPoolsByRiskScoreRange into the expected CSV format
  * for the DeFi analyst system prompt
@@ -92,4 +90,19 @@ export function formatPoolsToCSV(pools: PoolWithRiskScore[]): string {
   
   // Return the combined CSV string
   return `${yieldPools}`;
+}
+
+/**
+ * Formats the output from getPoolsByRiskScoreRange into the expected CSV format
+ * for the DeFi analyst system prompt
+ * 
+ * @param tokens Array of tokens with risk scores returned by getTokenRisks
+ * @returns A formatted CSV string with TOKEN_OPPORTUNITIES sections
+ */
+export function formatTokensToCSV(tokens: TokenWithRiskScore[]): string {
+  let tokensCSV = "TOKENS\nToken,RiskScore,Address,Decimals\n";
+  tokens.forEach(token => {
+    tokensCSV += `${token.symbol},${token.riskScore},${token.id},${token.decimals}\n`;
+  });
+  return tokensCSV;
 }
