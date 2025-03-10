@@ -4,6 +4,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { type Metadata } from "next";
 import { Providers } from "./_components/providers";
 import { Footer } from "@nuvolari/components/ui/footer";
+import { MenuBar } from "./_components/menu-bar";
 
 export const metadata: Metadata = {
   title: "NuvolariAI",
@@ -22,7 +23,13 @@ export default function RootLayout({
 
       <div className="flex flex-col h-screen">
         <div className="flex-grow overflow-auto">
+
+    <div className="h-full flex flex-col">
+      <div className="w-full max-w-[720px] mx-auto px-4">
+        <MenuBar />
+      </div>
           {children}
+          </div>
         </div>
         <Footer />
       </div>

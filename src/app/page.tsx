@@ -7,7 +7,6 @@ import { HydrateClient } from '@nuvolari/trpc/server';
 export default async function Home() {
   return (
     <HydrateClient>
-
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', width: '100%', padding: '12px' }}>
         <ConnectButton />
       </div>

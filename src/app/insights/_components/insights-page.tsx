@@ -2,16 +2,11 @@
 
 import { MenuBar } from "@nuvolari/app/_components/menu-bar";
 import { InsightCommand } from "./insight-command";
-import { Button } from "@nuvolari/components/ui/button";
-import { ArrowLeftRight, Lightbulb, Percent, Star } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 import { cn } from "@nuvolari/lib/utils";
 
 export const InsightsPage = () => {
   return (
-    <div className="h-full flex flex-col">
-      <div className="w-full max-w-[720px] mx-auto px-4">
-        <MenuBar />
-      </div>
       <main className="flex-grow flex flex-col items-center px-4 py-4">
       <section className="flex flex-col items-center gap-1 text-white tracking-normal mb-4">
         <h1 className="text-[28px] font-semibold ">Insights</h1>
@@ -81,6 +76,5 @@ export const InsightsPage = () => {
         </div>
       </section>
     </main>
-    </div>
   );
 };

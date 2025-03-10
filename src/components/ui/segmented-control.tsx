@@ -1,21 +1,17 @@
 "use client";
-
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, px } from "framer-motion";
 import { cn } from "@nuvolari/lib/utils";
-
 export type Tab = {
   id: string;
   label: string;
 };
-
 export type SegmentedControlProps = {
   tabs: Tab[];
   defaultTabId?: string;
   onChange?: (tabId: string) => void;
   className?: string;
 };
-
 export const SegmentedControl = ({
   tabs,
   defaultTabId,
@@ -25,12 +21,10 @@ export const SegmentedControl = ({
   const [activeTabId, setActiveTabId] = useState<string>(
     defaultTabId || tabs[0]?.id || ""
   );
-
   const handleTabChange = (tabId: string) => {
     setActiveTabId(tabId);
     onChange?.(tabId);
   };
-
   return (
     <div
       className={cn(
@@ -40,7 +34,7 @@ export const SegmentedControl = ({
     >
       {activeTabId && (
         <motion.div
-          className="absolute h-[23px] bg-white/[0.04] rounded-[8px] shadow-[0px_1px_0px_0px_#FFFFFF1A_inset]"
+          className="absolute h-[23px] bg-white/[0.04] rounded-[8px] shadow-[0px_1px_0px0px#FFFFFF1A_inset]"
           layoutId="segmentedControlBackground"
           transition={{ type: "spring", duration: 0.3 }}
           style={{
@@ -49,7 +43,6 @@ export const SegmentedControl = ({
           }}
         />
       )}
-
       {tabs.map((tab) => (
         <button
           key={tab.id}

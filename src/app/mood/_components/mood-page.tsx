@@ -8,11 +8,6 @@ import { BalanceCard } from "./balance-card";
 
 export const MoodPage = () => {
   return (
-    <div className="h-full flex flex-col">
-      <div className="w-full max-w-[720px] mx-auto px-4">
-        <MenuBar />
-      </div>
-      
       <main className="flex-grow flex flex-col items-center px-4 py-4">
         <section className="flex flex-col items-center gap-1 text-white tracking-normal mb-4">
           <h1 className="text-2xl font-semibold">Mood</h1>
@@ -47,6 +42,5 @@ export const MoodPage = () => {
           </div>
         </section>
       </main>
-    </div>
   );
 };
