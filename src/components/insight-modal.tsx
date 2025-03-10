@@ -153,8 +153,8 @@ export const InsightModal = ({
                         alt={insight.poolOut.protocol.name}
                         className="w-12 h-12 rounded-full border border-white/20 mb-2"
                       />
-                      <span className="text-white font-medium">{insight.poolOut.symbol}</span>
-                      <span className="text-white/60 text-sm line-clamp-2">{insight.poolOut.name}</span>
+                      <span className="text-white font-medium">{insight.poolOut ? insight.poolOut.symbol : insight.tokenOut.symbol}</span>
+                      <span className="text-white/60 text-sm line-clamp-2">{insight.poolOut ? insight.poolOut.name : insight.tokenOut.name}</span>
                     </>
                   ) : insight.tokenOutId ? (
                     <>
@@ -186,7 +186,7 @@ export const InsightModal = ({
                       alt={insight.poolOut.protocol.name}
                       className="w-5 h-5 rounded-full"
                     />
-                    <span className="text-white text-sm">{insight.poolOut.protocol.name}</span>
+                    <span className="text-white text-sm">{insight.poolOut ? insight.poolOut.protocol.name : insight.protocolSlug}</span>
                   </div>
                 </div>
               )}

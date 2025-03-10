@@ -1,4 +1,4 @@
-import { PrismaClient, InsightType, InsightStatus } from '@prisma/client';
+import { PrismaClient, InsightType, InsightStatus, Prisma, Token } from '@prisma/client';
 import { RawInsight } from '@nuvolari/agents/interfaces/workflow-types';
 import { getAddress } from 'viem';
 
@@ -69,6 +69,7 @@ export const transformRawInsightsToDbFormat = async (
 
         return {
           ...baseInsightData,
+          tokenOut: tokenOut,
           tokenOutId: tokenOut.id,
         };
       } else {
@@ -112,12 +113,50 @@ export const indexRawInsights = async (
   }
 };
 
+
+
+type PendingInsight = Prisma.InsightGetPayload<{
+  include: {
+    tokenIn: true;
+    poolOut: {
+      include: {
+        protocol: true,
+      };
+    };
+  };
+}>;
+
+
+
+const transforrmSwapInsights = async (insights: PendingInsight[]) => {
+  return Promise.all(insights.map(async (insight) => {
+    if (insight.type === 'TOKEN_OPPORTUNITY' && insight.tokenOutId) {
+      const tokenOut = await prisma.token.findUnique({
+        where: { id: insight.tokenOutId },
+      });
+
+      return {
+        ...insight,
+        tokenOut: tokenOut,
+      };
+    }
+
+    return {
+      ...insight,
+    };
+  }));
+}
+
+type PendingInsightWithToken = PendingInsight & {
+  tokenOut: Token;
+}
+
 /**
  * Returns array of PENDING Insights from the DB
  * @param userAddress User's blockchain address
  * @returns Array of pending Insight objects
  */
-export const getPendingInsights = async (userAddress: string) => {
+export const getPendingInsights = async (userAddress: string): Promise<PendingInsightWithToken[]> => {
   try {
     const pendingInsights = await prisma.insight.findMany({
       where: {
@@ -133,13 +172,16 @@ export const getPendingInsights = async (userAddress: string) => {
         },
       },
     });
-    
-    return pendingInsights;
+
+    const transformedInsights = await transforrmSwapInsights(pendingInsights);
+    return transformedInsights;
   } catch (error) {
     console.error('Error getting pending insights:', error);
     throw error;
   }
 };
+
+
 
 /**
  * Assigns EXECUTED status, executionDate and executionTxHash to an Insight
