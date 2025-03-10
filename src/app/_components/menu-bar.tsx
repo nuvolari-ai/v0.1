@@ -1,11 +1,11 @@
 "use client";
 
 import { Separator } from "@radix-ui/react-separator";
-import { Icons } from "../../../components/icons";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { cn } from "@nuvolari/lib/utils";
 import { Eye, GalleryVerticalEnd } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { Icons } from "@nuvolari/components/icons";
 
 export const MenuBar = () => {
   const pathname = usePathname();

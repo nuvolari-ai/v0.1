@@ -1,12 +1,12 @@
 "use client";
 
 import { cn } from "@nuvolari/lib/utils";
-import { MenuBar } from "./menu-bar";
 import { SuggestedInsightsCard } from "./suggested-insights-card";
 import { PortfolioMoodCard } from "./portfolio-mood-card";
 import { AddWidgetCard } from "./add-widget-card";
 import { ScoreCard } from "./score-card";
 import { BalanceCard } from "./balance-card";
+import { MenuBar } from "@nuvolari/app/_components/menu-bar";
 
 
 export const MoodPage = () => {
