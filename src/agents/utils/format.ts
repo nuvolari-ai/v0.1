@@ -1,19 +1,20 @@
 import { PortfolioSummary } from "@nuvolari/server/api/routers/_resolvers/calculate-account-portfolio";
 import { PoolWithRiskScore } from "../core/_resolvers/pool-risks";
 import { TokenWithRiskScore } from "../core/_resolvers/token-risks";
+
 /**
  * Converts a PortfolioSummary object to the CSV format needed for the DeFi analyst system prompt
  * @param portfolio The portfolio summary returned by calculateAccountPortfolio
  * @returns A formatted CSV string
  */
 export function formatPortfolioToCSV(portfolio: PortfolioSummary): string {
-    const { tokens, positions, total, portfolioRiskScore, riskGrade } = portfolio;
+    const { tokens, positions, total, portfolioRiskScore, riskGrade, userAddress } = portfolio;
     
     // Format the PORTFOLIO_SUMMARY section
-    const portfolioSummary = `PORTFOLIO_SUMMARY\nTotal Value,$${total.toFixed(2)} Risk Score,${portfolioRiskScore} Risk Grade,${riskGrade}\n`;
+    const portfolioSummary = `PORTFOLIO_SUMMARY\nTotalValue,$${total.toFixed(2)} RiskScore,${portfolioRiskScore} RiskGrade,${riskGrade},${portfolio.userAddress}\n`;
     
     // Format the TOKEN_HOLDINGS section
-    let tokenHoldings = "TOKEN_HOLDINGS\nSymbol,Name,Amount,USD Value,Percentage,Risk Score,Decimals\n";
+    let tokenHoldings = "TOKEN_HOLDINGS\nSymbol,Name,Amount,UsdValue,Percentage,RiskScore,Decimals\n";
     tokens.forEach(token => {
       tokenHoldings += `${token.tokenMetadata.symbol},${token.tokenMetadata.name},${token.amount},$${token.usdValue.toFixed(2)},${token.percentage}%,${token.riskScore},${token.decimals}\n`;
     });
@@ -78,14 +79,14 @@ export function formatPoolsToCSV(pools: PoolWithRiskScore[]): string {
     
     // Generate a simulated APY based on the risk score (higher risk = higher APY)
     // This is just for demonstration - in a real implementation, you would use actual APY data
-    const simulatedAPY = (3 + (riskScore * 3)).toFixed(1) + "%";
+    const simulatedAPY = '1%';
     
     // Get protocol details
     const protocolName = pool.protocol?.name || "Unknown";
     const protocolSlug = pool.protocol?.ensoId || "unknown";
     
     // This is a yield pool
-    yieldPools += `${protocolName},${protocolSlug},${pool.name},${simulatedAPY},${riskScore.toFixed(1)},${riskGrade},${pool.id}\n`;
+    yieldPools += `${protocolName},${protocolSlug},${pool.name},${simulatedAPY},${riskScore.toFixed(1)},${riskGrade},${pool.receiptTokenId}\n`;
   });
   
   // Return the combined CSV string

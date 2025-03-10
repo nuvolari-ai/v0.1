@@ -2,25 +2,28 @@ import { tool } from "@langchain/core/tools";
 import { getPoolsByRiskParameters } from "./parameters";
 import { getPoolsByRiskScoreRange } from "@nuvolari/agents/core/_resolvers/pool-risks";
 import { db } from "@nuvolari/server/db";
-import { formatPoolsToCSV } from "@nuvolari/agents/utils/format";
+import { formatPoolsToCSV, formatTokensToCSV } from "@nuvolari/agents/utils/format";
+import { getTokenRisks } from "@nuvolari/agents/core/_resolvers/token-risks";
 
 /**
- * Get pools by risk score range
+ * Get pools and tokens by risk score range
  */
-export const getPoolsByRiskTool = tool(
+export const getOpportunitiesByRiskTool = tool(
   async ({ minRiskScore, maxRiskScore }) => {
     const pools = await getPoolsByRiskScoreRange(db, {
       minRiskScore,
       maxRiskScore,
       chainId: 146,
     });
+
+    const tokens = await getTokenRisks(db, minRiskScore, maxRiskScore);
     
     // Tools must return strings
-    return formatPoolsToCSV(pools);
+    return formatPoolsToCSV(pools) + "\n" + formatTokensToCSV(tokens);
   },
   {
-    name: "get_pools_by_risk",
-    description: "Get pools by precomputed risk level of the user",
+    name: "get_opportunities_by_risk",
+    description: "Get pools and tokens by precomputed risk level of the user",
     schema: getPoolsByRiskParameters,
   }
 );

@@ -12,6 +12,7 @@ import { ZodError } from "zod";
 
 import { db } from "@nuvolari/server/db";
 import { createPluginApis } from "@nuvolari/agents/core/create-plugin-apis";
+import { createLangGraphAgent } from "@nuvolari/agents/core/agent";
 
 /**
  * 1. CONTEXT
@@ -27,10 +28,20 @@ import { createPluginApis } from "@nuvolari/agents/core/create-plugin-apis";
  */
 export const createTRPCContext = async (opts: { headers: Headers }) => {
   const plugins = await createPluginApis();
+  const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
+
+  if (!OPEN_AI_API_KEY) {
+    throw new Error("OPEN_AI_API_KEY is not set");
+  }
+
+  const agent = await createLangGraphAgent(
+    OPEN_AI_API_KEY
+  );
 
   return {
     db,
     plugins,
+    agent,
     ...opts,
   };
 };

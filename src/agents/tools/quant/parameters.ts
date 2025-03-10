@@ -6,9 +6,3 @@ export const getPoolsByRiskParameters = z.object({
     maxRiskScore: z.number(),
 })
 
-
-
-
-
-
-

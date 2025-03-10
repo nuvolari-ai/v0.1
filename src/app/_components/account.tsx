@@ -12,11 +12,17 @@ export const Account = () => {
     enabled: !!address,
   });
 
+  const { mutate: invokeNuvolari } = api.llm.invokeNuvolari.useMutation();
+
   useEffect(() => {
     if (account) {
       console.log(JSON.stringify(account));
+      invokeNuvolari({
+        address: address ?? '',
+      });
     }
   }, [account]);
+
 
 
   return (

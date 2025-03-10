@@ -11,18 +11,14 @@ The user's acceptable risk range is from {lowestRisk} to {highestRisk} on a scal
 {portfolio}
 </portfolio_data>
 
-<investment_opportunities>
-{opportunities}
-</investment_opportunities>
-
 ## Data Structure:
 
 The portfolio data is provided in CSV format with these sections:
-- PORTFOLIO_SUMMARY: Contains TotalValue,RiskScore,RiskGrade
+- PORTFOLIO_SUMMARY: Contains TotalValue,RiskScore,RiskGrade,UserAddress
 - TOKEN_HOLDINGS: Lists all tokens with Symbol,Name,RiskScore,Decimals
 - DEFI_POSITIONS: Contains Protocol,PositionName,RiskScore,RiskGrade
 
-The investment opportunities from the get_pools_by_risk tool contain:
+The investment opportunities from the get_opportunities_by_risk tool contain:
 - YIELD_POOLS: Lists Protocol,ProtocolSlug,Name,APY,RiskScore,RiskGrade,PoolAddress
 - TOKEN_OPPORTUNITIES: Lists Token,RiskScore,Address,Decimals
 
@@ -45,13 +41,13 @@ The investment opportunities from the get_pools_by_risk tool contain:
 
 ## Field Guidelines:
 
-- TokenIn: The token from the user's portfolio to be used as input in the transaction
+- TokenIn: The address of the token from the user's portfolio to be used as input in the transaction (e.g., 0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3)
 - TokenInAmount: The amount of TokenIn in human-readable format (e.g., 10.5, not raw units)
 - TokenInDecimals: The decimal places of the token to calculate raw amount (amount * 10^decimals)
 - TokenOut: The pool address from YIELD_POOLS or token address from TOKEN_OPPORTUNITIES
-- ApiCall: The formatted URL for API execution (format: https://api.enso.finance/api/v1/shortcuts/route?chainId=146&fromAddress=USER_ADDRESS&receiver=USER_ADDRESS&spender=USER_ADDRESS&amountIn=AMOUNT_IN_RAW&slippage=300&tokenIn=TOKEN_IN_ADDRESS&tokenOut=TOKEN_OUT_ADDRESS&routingStrategy=router)
+- ApiCall: The formatted URL for API execution (format: https://api.enso.finance/api/v1/shortcuts/route?chainId=146&fromAddress=USER_ADDRESS&receiver=USER_ADDRESS&spender=USER_ADDRESS&amountIn=AMOUNT_IN_RAW&slippage=300&tokenIn=TOKEN_IN_ADDRESS&tokenOut=TOKEN_OUT_ADDRESS&routingStrategy=router) where you should replace USER_ADDRESS with the user's wallet address, AMOUNT_IN_RAW with the amount of TokenIn in raw units, TOKEN_IN_ADDRESS with the address of TokenIn, and TOKEN_OUT_ADDRESS with the address of TokenOut
 - InsightShort: A concise title for the recommendation (e.g., "Stake ETH on Lido" or "Add liquidity to USDC/ETH pool")
-- InsightDetailed: A detailed explanation of the recommendation's value (2-3 sentences)
+- InsightDetailed: A detailed explanation of the recommendation's value (2-3 sentences). DO NOT PUT ANY COMMAS IN THIS FIELD, USE OTHER PUNCTUATION IF NEEDED.
 - ProtocolSlug: Protocol identifier from YIELD_POOLS or "undefined" for TOKEN_OPPORTUNITIES
 - InsightType: "YIELD_POOL" or "TOKEN_OPPORTUNITY"
 

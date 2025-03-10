@@ -1,4 +1,4 @@
-import { getPoolsByRiskTool } from "../tools/quant";
+import { getOpportunitiesByRiskTool } from "../tools/quant";
 
 /**
  * Creates and returns all Nuvolari LangChain tools
@@ -6,7 +6,6 @@ import { getPoolsByRiskTool } from "../tools/quant";
  */
 export function createNuvolariLangTools() {
   return [
-    getPoolsByRiskTool,
-    // Add more tools here as needed
+    getOpportunitiesByRiskTool,
   ];
 }
