@@ -141,10 +141,15 @@ export const InsightCommand = (props: InsightCommandProps) => {
     onActionSelect(action);
     setSearch(action.charAt(0).toUpperCase() + action.slice(1).toLowerCase()); // capitalise
   };
-
   const handleSelectedAsset = (asset: InsightAsset) => {
     onAssetSelect(asset);
-    setSearch((v) => `${v.trimEnd()} ${asset.symbol}`);
+    setSearch((v) => {
+      // Split the search string at the first space to keep the action part
+      const actionPart = v.split(' ')[0];
+      // Append the asset symbol
+      return `${actionPart?.trimEnd() ?? ''} ${asset.symbol}`;
+    });
+    onDestinationAssetSelect(null as any);
   };
 
   const handleSelectedDestinationAsset = (asset: InsightAsset) => {
@@ -153,7 +158,7 @@ export const InsightCommand = (props: InsightCommandProps) => {
       // Split the search string at " to " and take the first part
       const basePart = v.split(' to')[0];
       // Append the destination asset symbol
-      return `${basePart.trimEnd()} to ${asset.symbol}`;
+      return `${basePart?.trimEnd() || ''} to ${asset.symbol}`;
     });
   };
 
