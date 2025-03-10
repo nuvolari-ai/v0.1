@@ -58,7 +58,7 @@ export function formatPoolsToCSV(pools: PoolWithRiskScore[]): string {
   let yieldPools = "YIELD_POOLS\nProtocol,ProtocolSlug,Name,APY,Risk Score,Risk Grade,PoolAddress\n";
   
   // Process each pool
-  pools.forEach(pool => {
+  pools.filter(pool => pool.protocol?.ensoId !== 'wrapped-native').forEach(pool => {
     // Determine risk grade based on the combinedRiskScore
     let riskGrade: string;
     const riskScore = pool.combinedRiskScore;

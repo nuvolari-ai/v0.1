@@ -223,7 +223,7 @@ export interface NetworkModel {
     /**
      * Helper method to build the request headers
      */
-    private getHeaders(): HeadersInit {
+    getHeaders(): HeadersInit {
       return {
         'Authorization': `Bearer ${this.apiKey}`,
         'Content-Type': 'application/json'
@@ -249,7 +249,7 @@ export interface NetworkModel {
     /**
      * Helper method to make API requests
      */
-    private async request<T>(
+    async request<T>(
       endpoint: string,
       method: 'GET' | 'POST' | 'PUT' | 'DELETE' = 'GET',
       params: Record<string, any> = {},

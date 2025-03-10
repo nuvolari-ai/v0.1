@@ -35,6 +35,7 @@ export type RouterInputs = inferRouterInputs<AppRouter>;
  * @example type HelloOutput = RouterOutputs['example']['hello']
  */
 export type RouterOutputs = inferRouterOutputs<AppRouter>;
+export type Insight = RouterOutputs['insight']['getPendingInsights'][number];
 
 export function TRPCReactProvider(props: { children: React.ReactNode; queryClient: QueryClient }) {
   const queryClient = getQueryClient();

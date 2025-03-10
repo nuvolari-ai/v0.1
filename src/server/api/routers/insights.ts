@@ -2,6 +2,8 @@ import { addressSchema } from "@nuvolari/agents/tools/common";
 import { createTRPCRouter, publicProcedure } from "@nuvolari/server/api/trpc";
 import { z } from "zod";
 import { getPendingInsights, markInsightAsExecuted } from "./_resolvers/insights";
+import { generateAndIndexInsights } from "@nuvolari/agents/workflows/on-chain-insights";
+import { calculateAccountPortfolio } from "./_resolvers/calculate-account-portfolio";
 
 // Schema for the getPendingInsights input
 const getPendingInsightsInput = z.object({
@@ -31,12 +33,13 @@ export const insightRouter = createTRPCRouter({
    */
   markInsightAsExecuted: publicProcedure
     .input(markInsightAsExecutedInput)
-    .mutation(async ({ input }) => {
+    .mutation(async ({ ctx, input }) => {
       const executedInsight = await markInsightAsExecuted(
         input.insightId,
         input.executionTxHash,
         input.userAddress
       );
+
       return executedInsight;
     }),
 });

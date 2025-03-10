@@ -1,5 +1,6 @@
 import { PrismaClient, InsightType, InsightStatus } from '@prisma/client';
 import { RawInsight } from '@nuvolari/agents/interfaces/workflow-types';
+import { getAddress } from 'viem';
 
 const prisma = new PrismaClient();
 
@@ -13,6 +14,7 @@ export const transformRawInsightsToDbFormat = async (
   rawInsights: RawInsight[],
   userAddress: string
 ) => {
+  console.info('Transforming insights to DB format', rawInsights);
   // Map each raw insight to the DB format
   const transformedInsights = await Promise.all(
     rawInsights.map(async (insight) => {
@@ -25,14 +27,6 @@ export const transformRawInsightsToDbFormat = async (
         throw new Error(`Token with ID ${insight.tokenIn} not found`);
       }
 
-      // Find the protocol based on the ensoId (protocolSlug)
-      const protocol = await prisma.protocol.findUnique({
-        where: { ensoId: insight.protocolSlug },
-      });
-
-      if (!protocol) {
-        throw new Error(`Protocol with ensoId ${insight.protocolSlug} not found`);
-      }
 
       // Base insight data common to both types
       const baseInsightData = {
@@ -62,12 +56,11 @@ export const transformRawInsightsToDbFormat = async (
         return {
           ...baseInsightData,
           poolOutId: pool.id,
-          tokenOutId: null,
         };
       } else if (insight.insightType === 'TOKEN_OPPORTUNITY') {
         // For TOKEN_OPPORTUNITY, tokenOut is a Token ID
         const tokenOut = await prisma.token.findUnique({
-          where: { id: insight.tokenOut },
+          where: { id: getAddress(insight.tokenOut) },
         });
 
         if (!tokenOut) {
@@ -76,7 +69,6 @@ export const transformRawInsightsToDbFormat = async (
 
         return {
           ...baseInsightData,
-          poolOutId: null,
           tokenOutId: tokenOut.id,
         };
       } else {
@@ -100,6 +92,9 @@ export const indexRawInsights = async (
 ) => {
   try {
     const transformedInsights = await transformRawInsightsToDbFormat(rawInsights, userAddress);
+
+    console.info('Transformed insights', transformedInsights);
+    
     
     // Create all insights in a transaction
     const createdInsights = await prisma.$transaction(
@@ -112,7 +107,7 @@ export const indexRawInsights = async (
     
     return createdInsights;
   } catch (error) {
-    console.error('Error indexing insights:', error);
+    console.error(error);
     throw error;
   }
 };
@@ -170,6 +165,8 @@ export const markInsightAsExecuted = async (
         executionTxHash,
       },
     });
+
+    await markUserInsightsAsStale(userAddress);
     
     return updatedInsight;
   } catch (error) {
@@ -199,6 +196,45 @@ export async function hasPendingInsights(userAddress: string): Promise<{ hasPend
     };
   } catch (error) {
     console.error('Error checking for pending insights:', error);
+    throw error;
+  }
+}
+
+/**
+ * Marks all PENDING insights for a specific user as STALE
+ * This can be used to refresh a user's recommendations
+ * 
+ * @param userAddress User's blockchain address
+ * @returns Information about the update operation
+ */
+export async function markUserInsightsAsStale(userAddress: string): Promise<{ 
+  success: boolean; 
+  updatedCount: number;
+}> {
+  try {
+    // Get current time for logging
+    const now = new Date();
+    console.log(`[${now.toISOString()}] Marking all pending insights as stale for user: ${userAddress}`);
+    
+    // Update all PENDING insights for the user to STALE status
+    const result = await prisma.insight.updateMany({
+      where: {
+        userAddress,
+        status: InsightStatus.PENDING,
+      },
+      data: {
+        status: InsightStatus.STALE,
+      },
+    });
+    
+    console.log(`[${now.toISOString()}] Marked ${result.count} insights as STALE for user: ${userAddress}`);
+    
+    return {
+      success: true,
+      updatedCount: result.count,
+    };
+  } catch (error) {
+    console.error(`Error marking insights as stale for user ${userAddress}:`, error);
     throw error;
   }
 }

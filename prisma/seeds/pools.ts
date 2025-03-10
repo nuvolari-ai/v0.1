@@ -36,7 +36,7 @@ async function main() {
     symbol: pool.symbol,
     chainId: 146,
     protocolId: pool.protocolSlug,
-    receiptTokenId: getAddress(pool.primaryAddress),
+    receiptTokenId: getAddress(pool.address),
     underlyingTokens: pool.underlyingTokens.map((token) => getAddress(token.address)),
     protocolSlug: pool.protocolSlug,
   }));
