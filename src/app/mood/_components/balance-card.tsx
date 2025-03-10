@@ -19,7 +19,6 @@ export const BalanceCard = () => {
   const [activeTab, setActiveTab] = useState<"holdings" | "defi">("holdings");
   const { address, isConnected } = useAccount();
 
-  // Use the API without initialData
   const { data: accountData, isLoading } = api.account.getNuvolariAccount.useQuery(
     {
       address: address ?? "",

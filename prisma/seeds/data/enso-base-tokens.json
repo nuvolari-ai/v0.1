@@ -350,7 +350,9 @@
       "decimals": 18,
       "name": "Sonic",
       "symbol": "S",
-      "logosUri": [],
+      "logosUri": [
+        "https://assets.coingecko.com/coins/images/53064/thumb/logo.png?1735179479"
+      ],
       "type": "base"
     },
     {

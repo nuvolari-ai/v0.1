@@ -10,6 +10,27 @@ type TokenWithRisk = Prisma.TokenGetPayload<{
     }
 }>
 
+
+function convertToBigInt(valueStr: string, decimals: number): bigint {
+  if (!valueStr || valueStr.trim() === '') {
+    return BigInt(0);
+  }
+
+  try {
+    if (valueStr.includes('e') || valueStr.includes('E')) {
+      const numberValue = Number(valueStr);
+      
+      const fullDigitString = numberValue.toLocaleString('fullwide', { useGrouping: false });
+      
+      return BigInt(fullDigitString.replace('.', ''));
+    }
+    
+    return BigInt(valueStr);
+  } catch (error) {
+    console.error(`Error converting ${valueStr} to BigInt:`, error);
+    throw new Error(`Failed to convert ${valueStr} to BigInt`);
+  }
+}
   
   /**
    * Calculates the portfolio details including token values, positions,
@@ -71,7 +92,8 @@ type TokenWithRisk = Prisma.TokenGetPayload<{
     if (!tokenMetadata) {
       return null;
     }
-    const formattedAmount = formatUnits(BigInt(amount), decimals);
+    
+    const formattedAmount = formatUnits(convertToBigInt(amount, decimals), decimals)
     const usdValue = parseFloat(price) * parseFloat(formattedAmount);
     
     // Token risk is either from the DB or a fallback value
@@ -100,7 +122,8 @@ type TokenWithRisk = Prisma.TokenGetPayload<{
     if (!poolMetadata) {
       return null;
     }
-    const formattedAmount = formatUnits(BigInt(amount), decimals);
+
+    const formattedAmount = formatUnits(convertToBigInt(amount, decimals), decimals);
     const usdValue = parseFloat(price) * parseFloat(formattedAmount);
     
     // Protocol risk is from the protocol's finalPRF or a fallback

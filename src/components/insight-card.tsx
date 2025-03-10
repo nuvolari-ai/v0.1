@@ -81,7 +81,7 @@ export const InsightCard = ({ insight, className, compact = false }: InsightCard
         </div>
         
         {/* Arrow icon */}
-        <div className="absolute left-[40px] z-10 flex items-center">
+        <div className="absolute left-[40px] z-10 flex items-center pr-1">
           <ChevronRight className="h-5 w-3 text-white/50" />
         </div>
         

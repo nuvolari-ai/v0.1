@@ -5,8 +5,30 @@ import { PortfolioMoodCard } from "./portfolio-mood-card";
 import { AddWidgetCard } from "./add-widget-card";
 import { ScoreCard } from "./score-card";
 import { BalanceCard } from "./balance-card";
+import { useAccount } from "wagmi";
+import { useEffect } from "react";
+import { api } from "@nuvolari/trpc/react";
 
 export const MoodPage = () => {
+  const { address } = useAccount();
+
+  const {mutate} = api.llm.invokeNuvolari.useMutation();
+
+  api.insight.getPendingInsights.useQuery({
+    address: address ?? '',
+  }, {
+    enabled: !!address,
+    refetchInterval: 30000,
+  });
+  
+  useEffect(() => {
+    if (address) {
+      mutate({
+        address: address,
+      });
+    }
+  }, [address]);
+
   return (
       <main className="flex-grow flex flex-col items-center px-4 py-4">
         <section className="flex flex-col items-center gap-1 text-white tracking-normal mb-4">

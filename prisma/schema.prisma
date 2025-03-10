@@ -29,11 +29,11 @@ model Pool {
     defillamaId    String?
     symbol         String
     createdAt      DateTime @default(now())
-
-    chainId    Int
-    chain      Chain    @relation(fields: [chainId], references: [id])
-    protocolId String
-    protocol   Protocol @relation(fields: [protocolId], references: [id])
+    apy            Float?
+    chainId        Int
+    chain          Chain    @relation(fields: [chainId], references: [id])
+    protocolId     String
+    protocol       Protocol @relation(fields: [protocolId], references: [id])
 
     isStablecoin Boolean @default(false)
     poolMeta     String?

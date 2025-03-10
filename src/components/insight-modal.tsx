@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Insight } from "@nuvolari/trpc/react";
-import { X, ChevronRight, Loader2, Check, AlertCircle } from "lucide-react";
+import { X, ChevronRight, Loader2, Check, AlertCircle, Copy } from "lucide-react";
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -102,7 +102,7 @@ export const InsightModal = ({
             transition={{ duration: 0.2, ease: "easeOut" }}
           >
             {/* Header */}
-            <div className="bg-black/40 p-4 border-b border-white/10 flex justify-between items-center">
+            <div className="bg-black/04 p-4 border-b border-white/10 flex justify-between items-center">
               <div className="flex items-center gap-2">
                 <img 
                   src={getTypeIcon()} 
@@ -110,7 +110,7 @@ export const InsightModal = ({
                   className="w-6 h-6 rounded-md"
                 />
                 <h3 className="text-white text-lg font-medium">
-                  {insight.type === 'YIELD_POOL' ? 'Yield Opportunity' : 'Swap Opportunity'}
+                  {insight.type === 'YIELD_POOL' ? 'Yield' : 'Swap'}
                 </h3>
               </div>
               <button 
@@ -140,7 +140,7 @@ export const InsightModal = ({
                     />
                   </div>
                   <span className="text-white font-medium">{insight.tokenIn.symbol}</span>
-                  <span className="text-white/60 text-sm">{insight.tokenInAmount}</span>
+                  <span className="text-white/60 text-sm">{Number(insight.tokenInAmount).toFixed(6)}</span>
                 </div>
                 
                 <ChevronRight className="h-6 w-6 text-white" />
@@ -154,7 +154,7 @@ export const InsightModal = ({
                         className="w-12 h-12 rounded-full border border-white/20 mb-2"
                       />
                       <span className="text-white font-medium">{insight.poolOut.symbol}</span>
-                      <span className="text-white/60 text-sm">{insight.poolOut.name}</span>
+                      <span className="text-white/60 text-sm line-clamp-2">{insight.poolOut.name}</span>
                     </>
                   ) : insight.tokenOutId ? (
                     <>
@@ -195,7 +195,7 @@ export const InsightModal = ({
               {error && (
                 <div className="bg-red-900/30 text-red-400 p-3 rounded-xl flex items-center gap-2">
                   <AlertCircle className="h-5 w-5 flex-shrink-0" />
-                  <span className="text-sm">{error.message}</span>
+                  <span className="text-sm line-clamp-1">{error.message}</span>
                 </div>
               )}
               
@@ -222,6 +222,19 @@ export const InsightModal = ({
               >
                 Cancel
               </button>
+              {
+                error && (
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(error.message);
+                    }}
+                    className="px-4 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-700 transition-colors flex items-center gap-2"
+                  >
+                    <Copy className="h-4 w-4" />
+                    Copy Error
+                  </button>
+                )
+              }
               
               <button
                 onClick={onExecute}
