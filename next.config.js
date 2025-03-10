@@ -5,6 +5,10 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  images: {
+    domains: ["assets.coingecko.com", "icons.llama.fi", "icons.llamao.fi"],
+  },
+};
 
 export default config;

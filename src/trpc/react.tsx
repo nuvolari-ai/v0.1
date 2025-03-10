@@ -36,6 +36,8 @@ export type RouterInputs = inferRouterInputs<AppRouter>;
  */
 export type RouterOutputs = inferRouterOutputs<AppRouter>;
 export type Insight = RouterOutputs['insight']['getPendingInsights'][number];
+export type Token = RouterOutputs['account']['getNuvolariAccount']['tokens'][number];
+export type Position = RouterOutputs['account']['getNuvolariAccount']['positions'][number];
 
 export function TRPCReactProvider(props: { children: React.ReactNode; queryClient: QueryClient }) {
   const queryClient = getQueryClient();

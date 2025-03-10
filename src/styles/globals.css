@@ -1,13 +1,25 @@
+/* globals.css */
 @import "tailwindcss";
-
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: radial-gradient(57.13% 100% at 50% 0%, #332D3C 0%, #181818 100%);
-  width: 100vw;
-  height: 100vh;
+  color: white;
+  font-size: 14px; /* Smaller base font size */
+}
+
+.overflow-auto {
+  /* Only allow vertical scrolling when needed */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 :root {
@@ -127,4 +139,27 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Card styles */
+.card {
+  @apply rounded-lg bg-black/20 backdrop-blur-sm border border-white/10;
+  @apply transition-all duration-200;
+  @apply p-3; /* Smaller padding */
+}
+
+/* Ensure consistent gap between all cards */
+.gap-consistent {
+  @apply gap-3;
+}
+
+/* Make components more compact */
+.compact-ui {
+  @apply text-sm;
+  @apply space-y-2;
+}
+
+/* Make sure the main content area fits properly */
+.content-fit {
+  max-height: calc(100vh - 140px); /* Adjust based on header + footer height */
 }

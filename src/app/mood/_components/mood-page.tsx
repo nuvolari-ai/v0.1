@@ -1,5 +1,4 @@
 "use client";
-
 import { cn } from "@nuvolari/lib/utils";
 import { SuggestedInsightsCard } from "./suggested-insights-card";
 import { PortfolioMoodCard } from "./portfolio-mood-card";
@@ -8,34 +7,47 @@ import { ScoreCard } from "./score-card";
 import { BalanceCard } from "./balance-card";
 import { MenuBar } from "@nuvolari/app/_components/menu-bar";
 
-
 export const MoodPage = () => {
   return (
-    <main className="max-w-xl mx-auto flex flex-col justify-center items-center">
-      <MenuBar />
-      <section className="flex flex-col items-center gap-2 text-white tracking-normal mb-8">
-        <h1 className="text-[28px] font-semibold ">Mood</h1>
-        <p className="opacity-50 text-[12px]">
-          Reality check of your portfolio in one glance
-        </p>
-      </section>
-
-      <section className={cn("grid grid-cols-1 gap-2 md:grid-cols-2")}>
-        <div className="col-span-full">
-          <ScoreCard />
-        </div>
-        <div className="col-span-full md:col-span-1 md:row-span-2">
-          <BalanceCard />
-        </div>
-        <div className="col-span-full md:col-span-1 ">
-          <SuggestedInsightsCard />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-          <PortfolioMoodCard />
-          {/* <AddWidgetCard /> */}
-          <AddWidgetCard />
-        </div>
-      </section>
-    </main>
+    <div className="h-full flex flex-col">
+      <div className="w-full max-w-[720px] mx-auto px-4">
+        <MenuBar />
+      </div>
+      
+      <main className="flex-grow flex flex-col items-center px-4 py-4">
+        <section className="flex flex-col items-center gap-1 text-white tracking-normal mb-4">
+          <h1 className="text-2xl font-semibold">Mood</h1>
+          <p className="opacity-50 text-xs">
+            Reality check of your portfolio in one glance
+          </p>
+        </section>
+        
+        <section className="w-full max-w-3xl grid grid-cols-1 gap-3 md:grid-cols-12">
+          {/* Score Card - Full width */}
+          <div className="col-span-full">
+            <ScoreCard />
+          </div>
+          
+          {/* Balance Card - Left side on desktop */}
+          <div className="col-span-full md:col-span-6">
+            <BalanceCard />
+          </div>
+          
+          {/* Right side column container */}
+          <div className="col-span-full md:col-span-6 flex flex-col gap-3">
+            {/* Suggested Insights Card */}
+            <div>
+              <SuggestedInsightsCard />
+            </div>
+            
+            {/* Bottom two cards in a row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <PortfolioMoodCard />
+              <AddWidgetCard />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 };
