@@ -238,3 +238,4 @@ export async function markUserInsightsAsStale(userAddress: string): Promise<{
     throw error;
   }
 }
+

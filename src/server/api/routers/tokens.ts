@@ -5,12 +5,21 @@ import { z } from "zod";
 import { addressSchema } from "@nuvolari/agents/tools/common";
 import { calculateAccountPortfolio } from "./_resolvers/calculate-account-portfolio";
 import { getAddress } from "viem";
+import { transformTokensToPartialInsights } from "./_resolvers/tokens-to-insight";
+import { InsightType } from "@prisma/client";
 
 
 const getTokensRiskInput = z.object({
   address: addressSchema,
   minRiskScore: z.number(),
   maxRiskScore: z.number(),
+});
+
+
+const getComputedTokenInsightInput = z.object({
+  address: addressSchema,
+  tokenIn: addressSchema,
+  tokenOut: addressSchema,
 });
 
 
@@ -32,7 +41,23 @@ export const tokensRouter = createTRPCRouter({
         ...tokenBalance,
       };
      });
-
+     
      return tokensWithBalance.filter(Boolean);
+  }),
+
+
+  getComputedTokenInsight: publicProcedure.input(getComputedTokenInsightInput).query(async ({ ctx, input }) => {
+    const tokenIn = await ctx.db.token.findUnique({ where: { id: input.tokenIn } });
+    if (!tokenIn) throw new Error(`Token not found: ${input.tokenIn}`);
+
+    const tokenOut = await ctx.db.token.findUnique({ where: { id: input.tokenOut }, include: { risks: true } });
+    if (!tokenOut) throw new Error(`Token not found: ${input.tokenOut}`);
+
+    const tokenOutWithRisk = {
+      ...tokenOut,
+      riskScore: tokenOut.risks[0]?.riskScore ?? 0,
+    };
+
+    return transformTokensToPartialInsights(tokenIn, tokenOutWithRisk, InsightType.TOKEN_OPPORTUNITY);
   }),
 });

@@ -16,15 +16,16 @@ export const InsightsPage = () => {
     refetchInterval: 30000, // Refetch every 30 seconds
   });
 
-  const { data: tokens } = trpc.tokens.getTokensByPortfolioAndRisk.useQuery({
+  const {
+    data: tokenInsight,
+    isLoading: tokenInsightLoading,
+  } = trpc.tokens.getComputedTokenInsight.useQuery({
     address: address ?? '',
-    minRiskScore: 0,
-    maxRiskScore: 3,
+    tokenIn: '0x541FD749419CA806a8bc7da8ac23D346f2dF8B77',
+    tokenOut: '0x79bbF4508B1391af3A0F4B30bb5FC4aa9ab0E07C',
   }, {
     enabled: !!address,
   });
-
-  console.log(tokens);
 
 
   return (
