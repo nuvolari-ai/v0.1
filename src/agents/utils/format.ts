@@ -1,6 +1,4 @@
-import { PortfolioSummary } from "@nuvolari/server/api/routers/_resolvers/calculate-account-portfolio";
-import { PoolWithRiskScore } from "../core/_resolvers/pool-risks";
-import { TokenWithRiskScore } from "../core/_resolvers/token-risks";
+import { PortfolioSummary, PoolWithRiskScore, TokenWithRiskScore } from "@nuvolari/agents/interfaces/resolver-types";
 
 /**
  * Converts a PortfolioSummary object to the CSV format needed for the DeFi analyst system prompt

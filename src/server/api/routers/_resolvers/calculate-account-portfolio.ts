@@ -1,7 +1,7 @@
 import { formatUnits, getAddress } from "viem";
 import { type PrismaClient, type Prisma } from "@prisma/client";
 import { type EnsoAPIClient } from "@nuvolari/agents/tools/enso/api";
-
+import { PoolWithProtocol, PortfolioSummary, TokenBalance, PositionBalance } from "@nuvolari/agents/interfaces/resolver-types";
 
 
 type TokenWithRisk = Prisma.TokenGetPayload<{
@@ -10,47 +10,6 @@ type TokenWithRisk = Prisma.TokenGetPayload<{
     }
 }>
 
-type PoolWithProtocol = Prisma.PoolGetPayload<{
-    include: {
-        protocol: {
-            include: {
-                risks: true,
-            }
-        }
-    }
-}>
-  
-  
-  interface TokenBalance {
-    tokenMetadata: TokenWithRisk;
-    amount: string;
-    rawAmount: string;
-    decimals: number;
-    price: number;
-    usdValue: number;
-    percentage: number;
-    riskScore: number;
-  }
-  
-  interface PositionBalance {
-    poolMetadata: PoolWithProtocol;
-    amount: string;
-    rawAmount: string;
-    decimals: number;
-    price: number;
-    usdValue: number;
-    percentage: number;
-    riskScore: number;
-  }
-  
-export interface PortfolioSummary {
-    tokens: TokenBalance[];
-    userAddress: string;
-    positions: PositionBalance[];
-    total: number;
-    portfolioRiskScore: number;
-    riskGrade: string;
-  }
   
   /**
    * Calculates the portfolio details including token values, positions,
@@ -214,7 +173,7 @@ if (portfolioRiskScore <= 1.8) {
 return {
   tokens,
   positions,
-  total,
+  total: total,
   portfolioRiskScore,
   riskGrade,
   userAddress: address,

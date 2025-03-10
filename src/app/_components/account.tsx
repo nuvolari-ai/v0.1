@@ -14,15 +14,28 @@ export const Account = () => {
 
   const { mutate: invokeNuvolari } = api.llm.invokeNuvolari.useMutation();
 
+  const { data: pendingInsights } = api.insight.getPendingInsights.useQuery({
+    address: address ?? '',
+  }, {
+    enabled: !!address,
+  });
+
   useEffect(() => {
     if (account) {
       console.log(JSON.stringify(account));
+      console.log(pendingInsights);
       invokeNuvolari({
         address: address ?? '',
       });
     }
   }, [account]);
 
+
+  useEffect(() => {
+    if (pendingInsights) {
+      console.log(pendingInsights);
+    }
+  }, [pendingInsights]);
 
 
   return (

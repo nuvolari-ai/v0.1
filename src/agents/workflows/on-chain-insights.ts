@@ -1,22 +1,27 @@
-import { PortfolioSummary } from "@nuvolari/server/api/routers/_resolvers/calculate-account-portfolio";
+import { PortfolioSummary } from "@nuvolari/agents/interfaces/resolver-types";
+import { RawInsight } from "@nuvolari/agents/interfaces/workflow-types";
 import { formatPortfolioToCSV } from "../utils/format";
 import { NuvolariAgent } from "../core/agent";
+import { indexRawInsights } from "@nuvolari/server/api/routers/_resolvers/insights";
 
 /**
- * Generate insights based on user's portfolio and risk profile
+ * Generate insights based on user's portfolio and risk profile and index them in the database
  * @param agent The compiled LangGraph agent
- * @param formattedPortfolio User's portfolio in CSV format
+ * @param portfolio User's portfolio
+ * @param userAddress User's blockchain address
  * @param minRiskScore Minimum risk score for investment recommendations
  * @param maxRiskScore Maximum risk score for investment recommendations
- * @returns Insights in CSV format
+ * @returns Indexed insights
  */
-export async function generateInsights(
+export async function generateAndIndexInsights(
   agent: NuvolariAgent,
   portfolio: PortfolioSummary,
+  userAddress: string,
   minRiskScore: number,
   maxRiskScore: number
-): Promise<string> {
+) {
   try {
+    // First generate the insights
     const formattedPortfolio = formatPortfolioToCSV(portfolio);
     
     const recommendations = await agent.invoke({
@@ -24,33 +29,20 @@ export async function generateInsights(
       highestRisk: maxRiskScore,
       portfolio: formattedPortfolio,
     });
-
+    
     const output = recommendations?.messages?.[recommendations.messages.length - 1]?.content ?? '';
     
-    return output;
+    // Parse the insights from CSV
+    const rawInsights = parseInsights(output);
+    
+    // Index the insights in the database
+    const indexedInsights = await indexRawInsights(rawInsights, userAddress);
+    
+    return indexedInsights;
   } catch (error) {
-    console.error("Error generating investment recommendations:", error);
+    console.error("Error generating and indexing insights:", error);
     throw error;
   }
-}
-
-
-
-/**
- * Parse CSV recommendations into a structured format
- * @param csvInsights CSV string returned by the agent
- * @returns Array of structured recommendation objects
- */
-export interface RawInsight {
-  tokenIn: string;
-  tokenInAmount: string;
-  tokenInDecimals: number;
-  tokenOut: string;
-  apiCall: string;
-  insightShort: string;
-  insightDetailed: string;
-  protocolSlug: string;
-  insightType: string;
 }
 
 /**
@@ -87,19 +79,10 @@ export function parseInsights(csvString: string): RawInsight[] {
         currentValue += char;
       }
     }
+    
     values.push(currentValue);
     
-    const insight = {
-      tokenIn: '',
-      tokenInAmount: '',
-      tokenInDecimals: 0,
-      tokenOut: '',
-      apiCall: '',
-      insightShort: '',
-      insightDetailed: '',
-      protocolSlug: '',
-      insightType: ''
-    };
+    const insight: Partial<RawInsight> = {};
     
     headers.forEach((header: string, index: number) => {
       const property = header.charAt(0).toLowerCase() + header.slice(1);
@@ -108,12 +91,12 @@ export function parseInsights(csvString: string): RawInsight[] {
       if (property === 'tokenInDecimals') {
         insight[property] = parseInt(values[index] || '0', 10);
       } else {
-        // @ts-expect-error
+        // @ts-expect-error - Dynamically assigning properties
         insight[property] = values[index] || '';
       }
     });
     
-    result.push(insight);
+    result.push(insight as RawInsight);
   }
   
   return result;

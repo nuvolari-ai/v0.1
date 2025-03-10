@@ -1,28 +1,6 @@
+import { GetPoolsByRiskScoreRangeParams, PoolWithProtocol, PoolWithRiskScore } from "@nuvolari/agents/interfaces/resolver-types";
 import { PrismaClient, Prisma } from '@prisma/client';
 
-// Input parameters for getPoolsByRiskScoreRange
-export interface GetPoolsByRiskScoreRangeParams {
-  minRiskScore: number;
-  maxRiskScore: number;
-  chainId?: number;
-  limit?: number;
-  offset?: number;
-}
-
-// Define the type for a pool with protocol and calculated risk score
-type PoolWithProtocol = Prisma.PoolGetPayload<{
-  include: {
-    protocol: {
-      include: {
-        risks: true;
-      }
-    }
-  }
-}>;
-
-export interface PoolWithRiskScore extends PoolWithProtocol {
-  combinedRiskScore: number;
-}
 
 /**
  * Calculate combined risk score for a pool based on protocol and underlying tokens

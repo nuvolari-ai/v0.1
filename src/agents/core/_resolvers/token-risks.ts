@@ -1,11 +1,6 @@
 import { Token } from "@prisma/client";
 import { PrismaClient } from "@prisma/client";
-
-
-export type TokenWithRiskScore = Token & {
-  riskScore: number;
-}
-
+import { TokenWithRiskScore } from "@nuvolari/agents/interfaces/resolver-types";
 
 export async function getTokenRisks(db: PrismaClient, minRiskScore: number, maxRiskScore: number): Promise<TokenWithRiskScore[]> {
   const tokens = await db.token.findMany({

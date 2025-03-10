@@ -39,7 +39,8 @@ model Pool {
 
     underlyingTokens String[]
 
-    updatedAt DateTime @updatedAt
+    updatedAt DateTime  @updatedAt
+    insights  Insight[]
 }
 
 model Token {
@@ -53,8 +54,9 @@ model Token {
     createdAt    DateTime    @default(now())
     risks        TokenRisk[]
 
-    chainId Int
-    chain   Chain @relation(fields: [chainId], references: [id])
+    chainId  Int
+    chain    Chain     @relation(fields: [chainId], references: [id])
+    insights Insight[]
 }
 
 model TokenRisk {
@@ -94,4 +96,39 @@ model ProtocolRisk {
     grade                 String
     createdAt             DateTime @default(now())
     updatedAt             DateTime @updatedAt
+}
+
+enum InsightType {
+    YIELD_POOL
+    TOKEN_OPPORTUNITY
+}
+
+enum InsightStatus {
+    PENDING
+    EXECUTED
+    STALE
+}
+
+model Insight {
+    id              String      @id @default(cuid())
+    createdAt       DateTime    @default(now())
+    type            InsightType
+    userAddress     String
+    insightShort    String
+    insightDetailed String
+    protocolSlug    String
+    apiCall         String
+    tokenIn         Token       @relation(fields: [tokenInId], references: [id])
+    tokenInId       String
+    tokenInAmount   String
+    tokenInDecimals Int
+    executionTxHash String?
+    executionDate   DateTime?
+    poolOut         Pool?       @relation(fields: [poolOutId], references: [id])
+    poolOutId       String?
+    tokenOutId      String?
+
+    status InsightStatus @default(PENDING)
+
+    @@index([userAddress])
 }
