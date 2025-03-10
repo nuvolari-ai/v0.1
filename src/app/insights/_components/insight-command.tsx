@@ -144,14 +144,16 @@ export const InsightCommand = (props: InsightCommandProps) => {
 
   const handleSelectedAsset = (asset: InsightAsset) => {
     onAssetSelect(asset);
-    setSearch((v) => `${v} ${asset.symbol}`);
+    setSearch((v) => `${v.trimEnd()} ${asset.symbol}`);
   };
 
   const handleSelectedDestinationAsset = (asset: InsightAsset) => {
     onDestinationAssetSelect(asset);
     setSearch((v) => {
-      const _v = v.replaceAll(' to', '')
-      return `${_v} to ${asset.symbol}`;
+      // Split the search string at " to " and take the first part
+      const basePart = v.split(' to')[0];
+      // Append the destination asset symbol
+      return `${basePart.trimEnd()} to ${asset.symbol}`;
     });
   };
 
