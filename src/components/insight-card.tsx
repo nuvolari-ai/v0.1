@@ -82,7 +82,7 @@ export const InsightCard = ({ insight, className, compact = false }: InsightCard
         
         {/* Arrow icon */}
         <div className="absolute left-[40px] z-10 flex items-center">
-          <ChevronRight className="h-5 w-5 text-white/50" />
+          <ChevronRight className="h-5 w-3 text-white/50" />
         </div>
         
         {/* Token/Pool Out icon - potentially overlapped */}

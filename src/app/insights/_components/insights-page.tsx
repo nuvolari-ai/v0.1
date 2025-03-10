@@ -5,6 +5,7 @@ import { InsightCard } from "@nuvolari/components/insight-card";
 import { api as trpc } from "@nuvolari/trpc/react";
 import { useModal } from "@nuvolari/components/modal-provider";
 import { useAccount } from "wagmi";
+
 export const InsightsPage = () => {
   const { openInsightModal } = useModal();
   const { address } = useAccount();
@@ -14,6 +15,16 @@ export const InsightsPage = () => {
     enabled: !!address,
     refetchInterval: 30000, // Refetch every 30 seconds
   });
+
+  const { data: tokens } = trpc.tokens.getTokensByPortfolioAndRisk.useQuery({
+    address: address ?? '',
+    minRiskScore: 0,
+    maxRiskScore: 3,
+  }, {
+    enabled: !!address,
+  });
+
+  console.log(tokens);
 
 
   return (

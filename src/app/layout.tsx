@@ -3,7 +3,6 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 import { type Metadata } from "next";
 import { Providers } from "./_components/providers";
-import { Footer } from "@nuvolari/components/ui/footer";
 import { MenuBar } from "./_components/menu-bar";
 
 export const metadata: Metadata = {
@@ -31,7 +30,6 @@ export default function RootLayout({
           {children}
           </div>
         </div>
-        <Footer />
       </div>
       </Providers>
       </body>
