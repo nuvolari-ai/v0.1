@@ -17,7 +17,7 @@ export const StepSelectAsset = (
         prefix?: string;
     }
 ) => {
-  const { availableAssets, onSelect } = props;
+  const { availableAssets, onSelect, prefix } = props;
 
   const steps = useMemo(() => {
     return availableAssets.map((asset) => ({
@@ -30,9 +30,9 @@ export const StepSelectAsset = (
   
   return steps.map((command) => (
     <div key={command.label} className="cursor-pointer">
-      <CommandItem className="hover:bg-white/40" onSelect={command.onClick} forceMount={true}>
-        <div className="w-6 h-6 bg-[#AC87CF] p-1 rounded-[6px]">
-          {command.icon && <Image src={command.icon} width={24} height={24} alt={command.symbol} className="w-6 h-6" />}
+      <CommandItem className="hover:bg-black/40" onSelect={command.onClick} forceMount={true}>
+        <div className="w-6 h-6 bg-[#AC87CF] rounded-[6px]">
+          {command.icon && <Image src={command.icon} width={24} height={24} alt={command.symbol} className="w-6 h-6 rounded-[6px]" />}
         </div>
         <span className="text-white">{command.symbol}</span>
         <span className="text-gray-400 text-xs">{command.label}</span>

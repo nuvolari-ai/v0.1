@@ -25,8 +25,8 @@ export const StepSelectPool = (
 
   return pools?.map((pool) => (
     <div key={pool.address} className="cursor-pointer" onClick={() => onSelect(pool)}>
-      <CommandItem className="hover:bg-white/40">
-        <div className="w-6 h-6 bg-[#AC87CF] p-1 rounded-[6px]">
+      <CommandItem className="hover:bg-black/40">
+        <div className="w-6 h-6 bg-[#AC87CF] rounded-[6px]">
           <TokenIcon symbol={pool.symbol} variant="branded" size="64" />
         </div>
         <span className="text-white">{pool.label}</span>

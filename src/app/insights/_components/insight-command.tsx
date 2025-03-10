@@ -5,7 +5,6 @@ import {
   CommandEmpty,
   CommandGroup,
   CommandInput,
-  CommandItem,
   CommandList,
 } from "@nuvolari/components/ui/command";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -14,84 +13,77 @@ import { InsightAsset, StepSelectAsset } from "./steps/step-select-asset";
 import { Token } from "@prisma/client";
 import "./insight-command.css";
 import Fuse from 'fuse.js';
-
+import { InsightWithToken } from "@nuvolari/trpc/react";
 enum InsightCommandStep {
   SEARCH = 0,
   SELECT_ASSET = 1,
   SELECT_SECOND_ASSET = 2,
   SELECT_POOL = 3,
-  EXECUTE = 4,
+  SELECT_SWAP_INSIGHT = 4,
+  EXECUTE = 5,
 }
 
-export const InsightCommand = (props: { tokens: Token[] }) => {
+interface InsightCommandProps {
+  tokens: Token[];
+  onActionSelect: (action: InsightAction) => void;
+  onAssetSelect: (asset: InsightAsset) => void;
+  onDestinationAssetSelect: (asset: InsightAsset) => void;
+  selectedAction: InsightAction | null;
+  selectedAsset: InsightAsset | null;
+  selectedDestinationAsset: InsightAsset | null;
+  insights: InsightWithToken[];
+}
+
+export const InsightCommand = (props: InsightCommandProps) => {
+  const {
+    tokens,
+    onActionSelect,
+    onAssetSelect,
+    onDestinationAssetSelect,
+    selectedAction,
+    selectedAsset,
+    selectedDestinationAsset,
+    insights
+  } = props;
+
   const searchInput = useRef(null);
   const [inFocus, setFocus] = useState(false);
+  const [search, setSearch] = useState("");
 
-  // const inFocus = document
-  //   ? document.activeElement === searchInput.current
-  //   : false;
-
+  // Keep UI-related state in the component
   const selectableTokens = useMemo(() => {
-    return props.tokens.map((token) => ({
+    return tokens.map((token) => ({
       label: token.name,
       address: token.id,
       symbol: token.symbol,
       chainId: token.chainId,
       icon: token.logosUri[0],
     }));
-  }, [props.tokens]);
-
-  const [selectedAction, setSelectedAction] = useState<InsightAction | null>(null);
-  const [selectedAsset, setSelectedAsset] = useState<InsightAsset | null>(null);
-  const [selectedDestinationAsset, setSelectedDestinationAsset] = useState<InsightAsset | null>(null);
-
-  const [search, setSearch] = useState("");
+  }, [tokens]);
 
   const actionIsSwap = useMemo(() => {
     return selectedAction?.toLowerCase() === 'swap';
-  }, [selectedAction]); 
+  }, [selectedAction]);
 
-  useEffect(() => {
-    if (selectedAsset) {
-      if (!search.includes(selectedAsset.symbol)) {
-        setSelectedAsset(null);
-      }
-    }
-
-    if (selectedDestinationAsset) {
-      if (!search.includes(selectedDestinationAsset.symbol)) {
-        setSelectedDestinationAsset(null);
-      }
-    }
-  }, [search, selectedAsset, selectedDestinationAsset])
-
-  const handleActionSelect = (action: InsightAction) => {
-    setSelectedAction(action);
-    setSearch(action.charAt(0).toUpperCase() + action.slice(1).toLowerCase()); // capitalise
-  };
-
-  const handleSelectedAsset = (asset: InsightAsset) => {
-    setSelectedAsset(asset);
-
-    setSearch((v) => `${v} ${asset.symbol}`);
-  };
-
-  const handleSelectedDestinationAsset = (asset: InsightAsset) => {
-    setSelectedDestinationAsset(asset);
-
-    setSearch((v) => {
-      const _v = v.replaceAll(' to', '')
-      return `${_v} to ${asset.symbol}`;
+  // Create Fuse instance for token searching
+  const tokenFuse = useMemo(() => {
+    return new Fuse(selectableTokens, {
+      keys: ['label', 'symbol'],
+      threshold: 0.3,
+      isCaseSensitive: false,
     });
-  };
+  }, [selectableTokens]);
 
+  // Calculate current step
   const currentStep = useMemo(() => {
     if (search.toLowerCase().startsWith('yield') || search.toLowerCase().startsWith('swap')) {
       if (selectedAsset) {
         if (actionIsSwap && !selectedDestinationAsset) {
           return InsightCommandStep.SELECT_SECOND_ASSET;
         }
-
+        if (actionIsSwap && selectedDestinationAsset) {
+          return InsightCommandStep.SELECT_SWAP_INSIGHT;
+        }
         if (search.includes(selectedAsset.symbol)) {
           return InsightCommandStep.SELECT_POOL;
         }
@@ -103,41 +95,6 @@ export const InsightCommand = (props: { tokens: Token[] }) => {
     return InsightCommandStep.SEARCH;
   }, [search, selectedAsset, selectedDestinationAsset, actionIsSwap]);
 
-  console.log(currentStep, 'current step');
-
-  // Update searchTextParts to better handle the "to" part
-  const searchTextParts = useMemo(() => {
-    const parts = search.split(' ');
-    const action = parts[0];
-    const asset = parts[1];
-    
-    // Check if "to" is part of the search string
-    const toIndex = parts.indexOf('to');
-    const secondAsset = toIndex >= 0 && parts.length > toIndex + 1 ? parts[toIndex + 1] : null;
-    
-    // Separate the middle parts and end parts
-    const middleParts = toIndex > 2 ? parts.slice(2, toIndex) : [];
-    const endParts = secondAsset && toIndex + 2 < parts.length ? parts.slice(toIndex + 2) : [];
-
-    return {
-      action,
-      asset,
-      hasTo: toIndex >= 0,
-      secondAsset,
-      middleParts,
-      endParts
-    };
-  }, [search]);
-
-  // Create Fuse instance for token searching
-  const tokenFuse = useMemo(() => {
-    return new Fuse(selectableTokens, {
-      keys: ['label', 'symbol'],
-      threshold: 0.3,
-      isCaseSensitive: false,
-    });
-  }, [selectableTokens]);
-  
   // Create filtered tokens based on search
   const filteredTokens = useMemo(() => {
     if (!search || currentStep === InsightCommandStep.SEARCH) {
@@ -163,6 +120,64 @@ export const InsightCommand = (props: { tokens: Token[] }) => {
     // Use Fuse to search
     return tokenFuse.search(searchTerm).map(result => result.item);
   }, [search, tokenFuse, selectableTokens, currentStep]);
+
+  // Clean up selected assets when search changes
+  useEffect(() => {
+    if (selectedAsset) {
+      if (!search.includes(selectedAsset.symbol)) {
+        onAssetSelect(null as any);
+      }
+    }
+
+    if (selectedDestinationAsset) {
+      if (!search.includes(selectedDestinationAsset.symbol)) {
+        onDestinationAssetSelect(null as any);
+      }
+    }
+  }, [search, selectedAsset, selectedDestinationAsset, onAssetSelect, onDestinationAssetSelect]);
+
+  // Wrapper functions to handle local UI state along with parent state
+  const handleActionSelect = (action: InsightAction) => {
+    onActionSelect(action);
+    setSearch(action.charAt(0).toUpperCase() + action.slice(1).toLowerCase()); // capitalise
+  };
+
+  const handleSelectedAsset = (asset: InsightAsset) => {
+    onAssetSelect(asset);
+    setSearch((v) => `${v} ${asset.symbol}`);
+  };
+
+  const handleSelectedDestinationAsset = (asset: InsightAsset) => {
+    onDestinationAssetSelect(asset);
+    setSearch((v) => {
+      const _v = v.replaceAll(' to', '')
+      return `${_v} to ${asset.symbol}`;
+    });
+  };
+
+  // Update searchTextParts to better handle the "to" part
+  const searchTextParts = useMemo(() => {
+    const parts = search.split(' ');
+    const action = parts[0];
+    const asset = parts[1];
+    
+    // Check if "to" is part of the search string
+    const toIndex = parts.indexOf('to');
+    const secondAsset = toIndex >= 0 && parts.length > toIndex + 1 ? parts[toIndex + 1] : null;
+    
+    // Separate the middle parts and end parts
+    const middleParts = toIndex > 2 ? parts.slice(2, toIndex) : [];
+    const endParts = secondAsset && toIndex + 2 < parts.length ? parts.slice(toIndex + 2) : [];
+
+    return {
+      action,
+      asset,
+      hasTo: toIndex >= 0,
+      secondAsset,
+      middleParts,
+      endParts
+    };
+  }, [search]);
 
   const isEmpty = useMemo(() => {
     return search.trim() === '';
@@ -201,11 +216,11 @@ export const InsightCommand = (props: { tokens: Token[] }) => {
             <CommandEmpty>No results found.</CommandEmpty>
           )} 
 
-            {currentStep === InsightCommandStep.SEARCH && (
-                <CommandGroup heading="Suggestions">
-                  <StepSelectAction onSelect={handleActionSelect} />
-                </CommandGroup>
-            )}
+          {currentStep === InsightCommandStep.SEARCH && (
+            <CommandGroup heading="Suggestions">
+              <StepSelectAction onSelect={handleActionSelect} />
+            </CommandGroup>
+          )}
 
           {currentStep === InsightCommandStep.SELECT_ASSET && (
             <CommandGroup heading="Asset" forceMount={true}>
@@ -228,7 +243,6 @@ export const InsightCommand = (props: { tokens: Token[] }) => {
           )}
         </CommandList>
       ) : null}
-      {/*  */}
     </Command>
   );
 };

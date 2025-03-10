@@ -74,8 +74,8 @@ export const InsightCard = ({ insight, className, compact = false }: InsightCard
         {/* Token In icon - overlapped */}
         <div className="absolute left-3 z-20">
           <img 
-            src={insight.tokenIn.logosUri[0] || "/icons/placeholder.jpg"} 
-            alt={insight.tokenIn.symbol} 
+            src={insight?.tokenIn?.logosUri[0] ?? "/icons/placeholder.jpg"} 
+            alt={insight?.tokenIn?.symbol ?? "Token In"} 
             className="w-5 h-5 rounded-full border border-white/20"
           />
         </div>
@@ -89,8 +89,8 @@ export const InsightCard = ({ insight, className, compact = false }: InsightCard
         <div className="absolute left-[52px] z-20">
           {insight.poolOut ? (
             <img 
-              src={insight.poolOut.protocol.logosUri[0] || "/icons/placeholder.jpg"} 
-              alt={insight.poolOut.protocol.name} 
+              src={insight?.poolOut?.protocol?.logosUri[0] ?? "/icons/placeholder.jpg"} 
+              alt={insight?.poolOut?.protocol?.name ?? "Pool Out"} 
               className="w-5 h-5 rounded-full border border-white/20"
             />
           ) : (

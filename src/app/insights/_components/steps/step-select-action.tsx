@@ -25,7 +25,7 @@ export const StepSelectAction = (
 ) => {
   return STEP_1_COMMANDS.map((command) => (
     <div key={command.label} className="cursor-pointer" >
-      <CommandItem className="hover:bg-white/40" onSelect={() => props.onSelect(command.action)}>
+      <CommandItem className="hover:bg-black/40" onSelect={() => props.onSelect(command.action)}>
         <div className="w-6 h-6 bg-[#AC87CF] p-1 rounded-[6px]">
           <command.icon className="w-3 h-3 text-white" />
         </div>

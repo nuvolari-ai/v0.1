@@ -134,12 +134,12 @@ export const InsightModal = ({
                       className="absolute -left-2 -top-2 w-6 h-6 rounded-md z-10"
                     />
                     <img 
-                      src={insight.tokenIn.logosUri[0] || "/api/placeholder/32/32"} 
-                      alt={insight.tokenIn.symbol}
+                      src={insight?.tokenIn?.logosUri[0] ?? "/api/placeholder/32/32"} 
+                      alt={insight?.tokenIn?.symbol ?? "Token In"}
                       className="w-12 h-12 rounded-full border border-white/20 relative z-0"
                     />
                   </div>
-                  <span className="text-white font-medium">{insight.tokenIn.symbol}</span>
+                  <span className="text-white font-medium">{insight?.tokenIn?.symbol}</span>
                   <span className="text-white/60 text-sm">{Number(insight.tokenInAmount).toFixed(6)}</span>
                 </div>
                 
@@ -149,8 +149,8 @@ export const InsightModal = ({
                   {insight.poolOut ? (
                     <>
                       <img 
-                        src={insight.poolOut.protocol.logosUri[0] || "/api/placeholder/32/32"} 
-                        alt={insight.poolOut.protocol.name}
+                        src={insight?.poolOut?.protocol?.logosUri[0] ?? "/api/placeholder/32/32"} 
+                        alt={insight?.poolOut?.protocol?.name ?? "Pool Out"}
                         className="w-12 h-12 rounded-full border border-white/20 mb-2"
                       />
                       <span className="text-white font-medium">{insight.poolOut ? insight.poolOut.symbol : insight.tokenOut.symbol}</span>
@@ -182,8 +182,8 @@ export const InsightModal = ({
                   <h4 className="text-white/80 text-sm font-medium mb-2">Protocol</h4>
                   <div className="flex items-center gap-2">
                     <img 
-                      src={insight.poolOut.protocol.logosUri[0] || "/api/placeholder/20/20"} 
-                      alt={insight.poolOut.protocol.name}
+                      src={insight?.poolOut?.protocol?.logosUri[0] ?? "/api/placeholder/20/20"} 
+                      alt={insight?.poolOut?.protocol?.name ?? "Pool Out"}
                       className="w-5 h-5 rounded-full"
                     />
                     <span className="text-white text-sm">{insight.poolOut ? insight.poolOut.protocol.name : insight.protocolSlug}</span>
