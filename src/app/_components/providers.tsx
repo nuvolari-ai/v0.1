@@ -7,6 +7,7 @@ import { QueryClientProvider } from "@tanstack/react-query"
 import { wagmiConfig } from "@nuvolari/wagmi"
 
 import { QueryClient } from "@tanstack/react-query";
+import { ModalProvider } from "@nuvolari/components/modal-provider";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +17,9 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
       <QueryClientProvider client={queryClient}>
         <TRPCReactProvider queryClient={queryClient}>
           <RainbowKitProvider theme={darkTheme()}>
-            {children}
+            <ModalProvider>
+              {children}
+            </ModalProvider>
           </RainbowKitProvider>
         </TRPCReactProvider>
       </QueryClientProvider>

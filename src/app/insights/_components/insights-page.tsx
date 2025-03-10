@@ -1,11 +1,21 @@
 "use client";
 
-import { MenuBar } from "@nuvolari/app/_components/menu-bar";
 import { InsightCommand } from "./insight-command";
-import { Lightbulb } from "lucide-react";
-import { cn } from "@nuvolari/lib/utils";
-
+import { InsightCard } from "@nuvolari/components/insight-card";
+import { api as trpc } from "@nuvolari/trpc/react";
+import { useModal } from "@nuvolari/components/modal-provider";
+import { useAccount } from "wagmi";
 export const InsightsPage = () => {
+  const { openInsightModal } = useModal();
+  const { address } = useAccount();
+  const { data: insights, isLoading } = trpc.insight.getPendingInsights.useQuery({
+    address: address ?? '',
+  }, {
+    enabled: !!address,
+    refetchInterval: 30000, // Refetch every 30 seconds
+  });
+
+
   return (
       <main className="flex-grow flex flex-col items-center px-4 py-4">
       <section className="flex flex-col items-center gap-1 text-white tracking-normal mb-4">
@@ -19,61 +29,9 @@ export const InsightsPage = () => {
         <InsightCommand />
       </section>
       <section className="grid grid-cols-3 md:grid-cols-3 gap-2 max-w-3xl mt-4">
-        <div
-          className={cn(
-            "bg-black/40 shadow-[0px_1px_0px_0px_#FFFFFF33_inset] p-4",
-            " h-[128px] flex flex-col justify-between rounded-[20px] text-white"
-          )}
-        >
-          <Lightbulb className="h-4 w-4" />
-          <span className="text-sm">
-            Swap 18.6 ETH to USDC to optimize portfolio
-          </span>
-        </div>
-        <div
-          className={cn(
-            "bg-black/40 shadow-[0px_1px_0px_0px_#FFFFFF33_inset] p-4",
-            " h-[128px] flex flex-col justify-between rounded-[20px] text-white"
-          )}
-        >
-          <Lightbulb className="h-4 w-4" />
-          <span className="text-sm">
-            Swap 18.6 ETH to USDC to optimize portfolio
-          </span>
-        </div>
-        <div
-          className={cn(
-            "bg-black/40 shadow-[0px_1px_0px_0px_#FFFFFF33_inset] p-4",
-            " h-[128px] flex flex-col justify-between rounded-[20px] text-white"
-          )}
-        >
-          <Lightbulb className="h-4 w-4" />
-          <span className="text-sm">
-            Swap 18.6 ETH to USDC to optimize portfolio
-          </span>
-        </div>
-        <div
-          className={cn(
-            "bg-black/40 shadow-[0px_1px_0px_0px_#FFFFFF33_inset] p-4",
-            " h-[128px] flex flex-col justify-between rounded-[20px] text-white"
-          )}
-        >
-          <Lightbulb className="h-4 w-4" />
-          <span className="text-sm">
-            Swap 18.6 ETH to USDC to optimize portfolio
-          </span>
-        </div>
-        <div
-          className={cn(
-            "bg-black/40 shadow-[0px_1px_0px_0px_#FFFFFF33_inset] p-4",
-            " h-[128px] flex flex-col justify-between rounded-[20px] text-white"
-          )}
-        >
-          <Lightbulb className="h-4 w-4" />
-          <span className="text-sm">
-            Swap 18.6 ETH to USDC to optimize portfolio
-          </span>
-        </div>
+        {insights?.map((insight) => (
+          <InsightCard key={insight.id} insight={insight} />
+        ))}
       </section>
     </main>
   );
