@@ -8,10 +8,11 @@ import { Label } from "@nuvolari/components/ui/label";
 import { useAccount } from "wagmi";
 import { api } from "@nuvolari/trpc/react";
 import { Skeleton } from "@nuvolari/components/ui/skeleton";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export const BalanceCard = () => {
   const [privateMode, setPrivateMode] = useState(false);
-  const { address } = useAccount();
+  const { address, isConnected } = useAccount();
 
   const { data: account, isLoading } = api.account.getNuvolariAccount.useQuery(
     {
@@ -22,8 +23,8 @@ export const BalanceCard = () => {
     }
   );
 
+  const totalUSD = account?.total ?? 0;
   const tokens = account?.tokens ?? [];
-  console.log(tokens);
 
   return (
     <div className="bg-black/40 p-3 pb-0 flex flex-col gap-4 rounded-[20px]">
@@ -50,12 +51,21 @@ export const BalanceCard = () => {
           })}
         />
         <div className="relative z-20">
-          {isLoading ? (
-            <Skeleton />
+          {!isConnected ? (
+            <div className="flex flex-col items-center gap-2 py-8">
+              <span className="text-white/40 text-xs">
+                Connect your wallet to see your portfolio
+              </span>
+              <ConnectButton />
+            </div>
           ) : (
-            <span className="text-3xl text-white">
-              $ {(account?.total ?? 0).toFixed(2)}
-            </span>
+            <div className="flex flex-col gap-2">
+              <Skeleton loading={isLoading} className="bg-white/5 w-full h-10">
+                <span className="text-3xl text-white">
+                  $ {totalUSD.toFixed(2)}
+                </span>
+              </Skeleton>
+            </div>
           )}
         </div>
       </div>
