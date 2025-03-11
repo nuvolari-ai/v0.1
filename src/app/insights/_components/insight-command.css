@@ -1,0 +1,12 @@
+.insight-command-text-wrap {
+    position: absolute;
+    left: calc(var(--spacing) * 3.2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    top: calc(var(--spacing) * 4.6);
+
+}
+
+.insight-command-text-wrap--asset {
+    background-color: #2a282d;
+}

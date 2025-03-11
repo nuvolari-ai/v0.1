@@ -1,0 +1,19 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_3663_3995)">
+<rect width="20" height="20" rx="6" fill="#AC87CF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3291 6.67085C13.557 6.89866 13.557 7.26801 13.3291 7.49581L7.49581 13.3291C7.26801 13.557 6.89866 13.557 6.67085 13.3291C6.44305 13.1013 6.44305 12.732 6.67085 12.5042L12.5042 6.67085C12.732 6.44305 13.1013 6.44305 13.3291 6.67085Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.332 11.7487C12.0099 11.7487 11.7487 12.0099 11.7487 12.332C11.7487 12.6542 12.0099 12.9154 12.332 12.9154C12.6542 12.9154 12.9154 12.6542 12.9154 12.332C12.9154 12.0099 12.6542 11.7487 12.332 11.7487ZM10.582 12.332C10.582 11.3655 11.3655 10.582 12.332 10.582C13.2985 10.582 14.082 11.3655 14.082 12.332C14.082 13.2985 13.2985 14.082 12.332 14.082C11.3655 14.082 10.582 13.2985 10.582 12.332Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.66797 7.08464C7.3458 7.08464 7.08464 7.3458 7.08464 7.66797C7.08464 7.99013 7.3458 8.2513 7.66797 8.2513C7.99013 8.2513 8.2513 7.99013 8.2513 7.66797C8.2513 7.3458 7.99013 7.08464 7.66797 7.08464ZM5.91797 7.66797C5.91797 6.70147 6.70147 5.91797 7.66797 5.91797C8.63447 5.91797 9.41797 6.70147 9.41797 7.66797C9.41797 8.63447 8.63447 9.41797 7.66797 9.41797C6.70147 9.41797 5.91797 8.63447 5.91797 7.66797Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_i_3663_3995" x="0" y="0" width="20" height="20" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3663_3995"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ggfdsgsdf234gds123
+      POSTGRES_DB: postgres 
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgresql://postgres:ggfdsgsdf234gds123@postgres:5432/postgres
+      - NODE_ENV=production
+
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+volumes:
+  postgres_data:

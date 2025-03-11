@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Pool" ADD COLUMN     "apy" DOUBLE PRECISION;
