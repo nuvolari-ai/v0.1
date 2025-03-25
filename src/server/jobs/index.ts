@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 import PgBoss from 'pg-boss';
 import { updateTokenRisks } from './update-token-risk';
 import { markPendingInsightsAsStale } from './mark-pending-insights-stale';

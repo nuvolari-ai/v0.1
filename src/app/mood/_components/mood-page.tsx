@@ -25,7 +25,6 @@ export const MoodPage = () => {
     if (address) {
       mutate({
         address: address,
-        forceGenerate: true,
       });
     }
   }, [address]);

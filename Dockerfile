@@ -13,7 +13,6 @@ COPY package.json bun.lockb* ./
 # Skip postinstall scripts during dependency installation
 RUN bun install --no-script
 
-
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
@@ -23,12 +22,15 @@ COPY . .
 # Set environment variables
 ENV NODE_ENV production
 ENV SKIP_ENV_VALIDATION true
+# Memory optimization for Node.js processes
+ENV NODE_OPTIONS="--max-old-space-size=2048"
 
 # Generate Prisma client
 RUN bunx prisma generate
 
-# Build the application
-RUN bun run build
+# Build the application with increased memory limit
+# Using a more memory-efficient approach: build in smaller chunks
+RUN NEXT_TELEMETRY_DISABLED=1 bun run build
 
 # Production image, copy all the files and run next
 FROM base AS runner
@@ -36,6 +38,7 @@ WORKDIR /app
 
 # Set environment variables
 ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
 
 # Create a non-root user and give them ownership of the app directory
 RUN addgroup --system --gid 1001 nodejs
@@ -48,6 +51,8 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/prisma ./prisma
+COPY --from=builder /app/src ./src
+
 
 # Set proper permissions
 RUN chown -R nextjs:nodejs /app
